@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.minicolors.css" />
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.minicolors.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/inje_common.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <dl id="skipNav">
+        <dt>바로가기</dt>
+        <dd><a href="#gnb">메뉴 바로가기</a></dd>
+        <dd><a href="#container">본문 바로가기</a></dd>
+    </dl>
+    <div id="wrap">
+        <div class="lnbWrap">
+            <h1><a href="#"><img src="../../images/img_logo.png" alt="우주전파센터 예경보시스템"></a></h1>
+            <ul id="lnb">
+                <li class="active"><a href="#">태양흑점폭발</a>
+                    <ul>
+                        <li class="active"><a href="">GOES X-ray</a></li>
+                        <li><a href="">태양전파관측</a></li>
+                        <li><a href="">태양활동 수준관측</a></li>
+                        <li><a href="">ASSA</a></li>
+                        <li><a href="">SDO</a></li>
+                        <li><a href="">GOES SUVI</a></li>
+                        <li><a href="">태양전파관측</a></li>
+                        <li><a href="">태양활동 수준관측</a></li>
+                        <li><a href="">ASSA</a></li>
+                        <li><a href="">SDO</a></li>
+                        <li><a href="">GOES SUVI</a></li>
+                        <li><a href="">태양전파관측</a></li>
+                        <li><a href="">태양활동 수준관측</a></li>
+                        <li><a href="">ASSA</a></li>
+                        <li><a href="">SDO</a></li>
+                        <li><a href="">GOES SUVI</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">태양입자유입</a>
+                    <ul>
+                        <li><a href="">GOES Proton</a></li>
+                        <li><a href="">ACE SIS</a></li>
+                        <li><a href="">경험적 태양입자 예측모델</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">지자기교란</a>
+                    <ul>
+                        <li><a href="">Kp index(3hr, 1min)</a></li>
+                        <li><a href="">K index</a></li>
+                        <li><a href="">지자기교란 예측모델</a></li>
+                        <li><a href="">ENLIL</a></li>
+                        <li><a href="">SOHO</a></li>
+                        <li><a href="">DSCOVR</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전리권교란</a>
+                    <ul>
+                        <li><a href="">전리권 지수</a></li>
+                        <li><a href="">전리권 관측</a></li>
+                        <li><a href="">한국형 전리권 예측모델</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">데이터 표출 및 조회</a>
+                    <ul>
+                        <li><a href="">종합상황판</a></li>
+                        <li><a href="">자료통합비교</a></li>
+                        <li><a href="">데이터 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예보서비스</a>
+                    <ul>
+                        <li><a href="">1일 예보</a></li>
+                        <li><a href="">3일 예보</a></li>
+                        <li><a href="">27일 예보</a></li>
+                        <li><a href="">일일브리핑</a></li>
+                        <li><a href="">예보정확도 평가</a></li>
+                        <li><a href="">국내외 예보비교</a></li>
+                        <li><a href="">예보발송 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">경보서비스</a>
+                    <ul>
+                        <li><a href="">SMS 전송</a></li>
+                        <li><a href="">Email 전송</a></li>
+                        <li><a href="">FAX 전송</a></li>
+                        <li><a href="">사전알림서비스</a></li>
+                        <li><a href="">경보기준 관리</a></li>
+                        <li><a href="">경보상황 보고서 조회</a></li>
+                        <li><a href="">경보발송 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">시스템관리</a>
+                    <ul>
+                        <li><a href="">수요자 통계</a></li>
+                        <li><a href="">수요자관리(별도)</a></li>
+                        <li><a href="">사용자로그</a></li>
+                        <li><a href="">기관로고</a></li>
+                        <li><a href="">예보상황실 근무표</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">이슈관리</a></li>
+                        <li><a href="">메뉴관리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- //좌측메뉴 -->
+
+        <!-- 본문 -->
+        <div id="container">
+            <div id="contentTop">
+                <h2>수요자관리(별도) 상세</h2>
+                <div class="userJoin">
+                    <p><span>홍길동</span>님이 로그인하셨습니다</p>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+            <!-- content start -->
+            <div id="content">
+                <div class="colBox">
+                    <!-- section start -->
+                    <div class="section w480">
+                        <h3>수요자관리 정보</h3>
+                        <div class="inner">
+                            <div class="infoList">
+                                <ul>
+                                    <li>
+                                        <span class="title">구분</span>
+                                        <select title="구분선택" class="w50p">
+                                            <option>기타</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <span class="title">기관</span>
+                                        <input type="text" title="기관입력" class="w100p">
+                                    </li>
+                                    <li>
+                                        <span class="title">담당자</span>
+                                        <input type="text" title="담당자입력" class="w100p">
+                                    </li>
+                                    <li>
+                                        <span class="title">연락처</span>
+                                        <input type="text" title="연락처입력" class="w100p">
+                                    </li>
+                                    <li>
+                                        <span class="title">Fax</span>
+                                        <input type="text" title="Fax입력" class="w100p">
+                                    </li>
+                                    <li>
+                                        <span class="title">이메일</span>
+                                        <input type="text" title="이메일 앞자리" class="w150">
+                                        <select title="이메일 도메인 선택" class="w180">
+                                            <option>@naver.com</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <span class="title">알람시간대</span>
+                                        <select title="알람 시간 시작" class="w100">
+                                            <option>00</option>
+                                        </select>
+                                        ~
+                                        <select title="알람 시간 종료" class="w100">
+                                            <option>24</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <span class="title">울시그램</span>
+                                        <label><input type="radio" name="gram_val" title="울시그램 받음"><span class="radioIcon">받음</span></label>
+                                        <label><input type="radio" name="gram_val" title="울시그램 받지않음"><span class="radioIcon">받지않음</span></label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btnBox alignRight">
+                                <a href="#" class="btn_small on">저장</a>
+                                <a href="#" class="btn_small red">삭제</a>
+                                <a href="#" class="btn_small gray">조회</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- section end -->
+                    <!-- section start -->
+                    <div class="section w480_minus mgl20">
+                        <div class="sideSection">
+                            <h4>예경보 보고서</h4>
+                            <div class="h4Content">
+                                <div class="tableBox mgb0">
+                                    <table class="list">
+                                        <caption>예경보 보고서의 구분정보와 3시간, 3일, 27일의 정보선택을 제공하고있습니다.</caption>
+                                        <colgroup>
+                                            <col style="width:10%">
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">3시간</th>
+                                                <th scope="col">3일</th>
+                                                <th scope="col">27일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>E-mail</td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree01" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree01" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree02" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree02" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree03" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree03" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fax</td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree04" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree04" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree05" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree05" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree06" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree06" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sideSection">
+                            <h4>경보메세지</h4>
+                            <div class="h4Content">
+                                <div class="tableBox mgb0">
+                                    <table class="list">
+                                        <caption>경보메세지의 구분정보와 태양복사활동, 태양입자활동, 지구자기장활동, 전리충정보의 정보선택을 제공하고있습니다.</caption>
+                                        <colgroup>
+                                            <col style="width:10%">
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">태양복사활동</th>
+                                                <th scope="col">태양입자활동</th>
+                                                <th scope="col">지구자기장활동</th>
+                                                <th scpoe="col">전리충정보</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>E-mail</td>
+                                                <td class="alignCenter">
+                                                    <select title="이메일 태양복사활동 선택" class="w100">
+                                                        <option>R1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="이메일 태양입자활동 선택" class="w100">
+                                                        <option>S1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="이메일 지구자기장활동 선택" class="w100">
+                                                        <option>G1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="이메일 전리충정보 선택" class="w100">
+                                                        <option>I1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td class="alignCenter">
+                                                    <select title="SMS 태양복사활동 선택" class="w100">
+                                                        <option>R1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="SMS 태양입자활동 선택" class="w100">
+                                                        <option>S1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="SMS 지구자기장활동 선택" class="w100">
+                                                        <option>G1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="SMS 전리충정보 선택" class="w100">
+                                                        <option>I1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fax</td>
+                                                <td class="alignCenter">
+                                                    <select title="Fax 태양복사활동 선택" class="w100">
+                                                        <option>R1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="Fax 태양입자활동 선택" class="w100">
+                                                        <option>S1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="Fax 지구자기장활동 선택" class="w100">
+                                                        <option>G1</option>
+                                                    </select>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <select title="Fax 전리충정보 선택" class="w100">
+                                                        <option>I1</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="list">
+                                        <caption>경보메세지의 구분정보와 HSS, CME Shock, CIR, Bz의 정보선택을 제공하고있습니다.</caption>
+                                        <colgroup>
+                                            <col style="width:10%">
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">HSS</th>
+                                                <th scope="col">CME Shock</th>
+                                                <th scope="col">CIR</th>
+                                                <th scpoe="col">Bz</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>E-mail</td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree07" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree07" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree08" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree08" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree09" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree09" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree10" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree10" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS</td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree11" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree11" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree12" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree12" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree13" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree13" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                                <td class="alignCenter">
+                                                    <label class="cheack_base"><input type="radio" name="agree14" title="받음"><span class="radioIcon">받음</span></label>
+                                                    <label class="cheack_base"><input type="radio" name="agree14" title="받지않음"><span class="radioIcon">받지않음</span></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sideSection">
+                            <h4>수정사유</h4>
+                            <div class="h4Content">
+                                <textarea title="수정사유입력란" class="w100p h160"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- section end -->
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+        <!-- //본문 -->
+        <div id="footer">
+            <p class="copyright">Copyright © <br><span>Korean Space Weather Center.</span> <br>All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

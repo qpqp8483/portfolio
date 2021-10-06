@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* NanumSquare font */
+@font-face{
+	font-family:'NanumSquare';
+	font-style:normal;
+	font-weight:400;
+	src:url(./fonts/NanumSquareL.eot);
+	src:url(./fonts/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+		url(./fonts/NanumSquareL.woff) format('woff'),
+		url(./fonts/NanumSquareL.ttf) format('opentype');
+}
+@font-face{
+	font-family:'NanumSquare';
+	font-style:normal;
+	font-weight:500;
+	src:url(./fonts/NanumSquareR.eot);
+	src:url(./fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+		url(./fonts/NanumSquareR.woff) format('woff'),
+		url(./fonts/NanumSquareR.ttf) format('opentype');
+}
+@font-face{
+	font-family:'NanumSquare';
+	font-style:normal;
+	font-weight:600;
+	src:url(./fonts/NanumSquareB.eot);
+	src:url(./fonts/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+		url(./fonts/NanumSquareB.woff) format('woff'),
+		url(./fonts/NanumSquareB.ttf) format('opentype');
+}
+@font-face{
+	font-family:'NanumSquare';
+	font-style:normal;
+	font-weight:700;
+	src:url(./fonts/NanumSquareEB.eot);
+	src:url(./fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+		url(./fonts/NanumSquareEB.woff) format('woff'),
+		url(./fonts/NanumSquareEB.ttf) format('opentype');
+}
+
+/* NanumGothic */
+/* @font-face{
+	font-family:'NanumGothic';
+	font-style:normal;
+	font-weight:400;
+	src:url(./fonts/NanumGothicLight.ttf) format('opentype');
+}
+@font-face{
+	font-family:'NanumGothic';
+	font-style:normal;
+	font-weight:500;
+	src:url(./fonts/NanumGothic.ttf) format('opentype');
+}
+@font-face{
+	font-family:'NanumGothic';
+	font-style:normal;
+	font-weight:600;
+	src:url(./fonts/NanumGothicBold.ttf) format('opentype');
+}
+@font-face{
+	font-family:'NanumGothic';
+	font-style:normal;
+	font-weight:700;
+	src:url(./fonts/NanumGothicExtraBold.ttf) format('opentype');
+} */

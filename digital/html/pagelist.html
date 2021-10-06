@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>디지털배움터 페이지목록</title>
+	<script type="text/javascript" charset="utf-8" src="../js/injeinc/jquery.min.js"></script>
+	<style type="text/css">
+	/* KUI */
+	/* Reset */* {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}html,body {width:100%;height:100%;}html {overflow:hidden;overflow-y:auto;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,input,button {font-family:NanumGothic;}body {font-size:0.75em;color:#444;margin:0;padding:0;*word-break:break-all;-ms-word-break:break-all;}img,fieldset,iframe {border:0 none;}input,select,button{vertical-align:middle;}img {vertical-align:middle;}button {cursor:pointer;}a {text-decoration:none;} a:hover {text-decoration:none}table {border-collapse:collapse;border-spacing:0}body:after, #header:before, #header:after, #footer:before, #footer:after, .container:before, .container:after, .row:before, .row:after {display:table;content:" ";}#header, #footer, .container {clear:both;}/* table */table {width:100%;border-collapse:collapse;}table.list th, table.list td {padding:8px;}table.list th {color:#000;border-bottom:2px #bbb solid;}table.list td {color:#666;border-bottom:1px #bbb solid;}table.bordered {border-top:1px #ddd solid;border-right:1px #ddd solid;}table.bordered th, table.bordered td {border-left:1px #ddd solid;}table.boxed {border-top:1px #ddd solid;}table.boxed thead {border-right:1px #ddd solid;}table.boxed th {background:#f3f3f3;border-left:1px #ddd solid;}table.basic {border-top:1px #ddd solid;}table.basic th, table.basic td {padding:5px;border-bottom:1px #ddd solid;}table.basic th {color:#000;}table.basic td {color:#666;}table td.center {text-align:center;}table.th-effect th {background:#f3f3f3;}/* */.wrap {margin:15px;}table tbody tr td:last-child {color:blue;}.red{color:red !important;}.infoBox{padding:10px;height:100px;overflow-y:auto;background:#f3f3f3;font-size:14px;}.infoBox h2, h3{font-size:15px;}
+	.blue{color:blue;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$("td").each(function(){
+			if($(this).text().indexOf('.asp')>0 || $(this).text().indexOf('.php')>0 || $(this).text().indexOf('.jsp')>0 || $(this).text().indexOf('.html')>0 || $(this).text().indexOf('.htm')>0){
+				$(this).css({'cursor':'pointer','text-decoration':'underline'});
+				$(this).click(function(){
+					window.open('./'+$(this).text(),'','');
+				});
+			}
+		});
+		$("tr td:last-child").each(function(){
+			if($(this).text().indexOf('완료')>0){
+				$(this).css('color','#3366aa');
+			}
+		});
+		$("tbody tr td:first-child").each(function(){
+			$(this).text(($(this).parent().index()+1));
+		});
+	});
+	</script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<h1>디지털배움터 파일리스트</h1>
+
+	<div class="infoBox">
+		<h2>○ 주의사항</h2>
+		<!-- - [접근성] label for 값과 input id 값은 동일해야 함. 예) label for="inp1" 일때  input id="inp1" -->
+<pre>
+- [접근성] placeholder 값 사용 시 title 값도 동일하게 제공 예) input type="password" placeholder="비밀번호 재입력" title="비밀번호 재입력"
+- [익스 대응] input 등에 readonly가 들어갈 때에는 readonly 클래스도 추가. 예) input type="text" class="readonly" readonly
+- [익스 대응] input 등에 disabled가 들어갈 때에는 disabled 클래스도 추가. 예) input type="text" class="disabled" disabled
+- 게시판_게시물없음표시 sub4 / UI-OPS-PA-5.2.1.html 파일참고
+</pre>
+	</div>
+<br>
+	<div class="infoBox">
+		<h2>○ 히스토리</h2>
+<pre>
+	2020 - 10 - 27 : 퍼블 수정 , 메뉴 뎁스 추가
+	2020 - 10 - 29 : 퍼블 CSS수정 , 디지털배움터메뉴 신청부분 퍼블작업 (디지털배움터 찾아보기 > 시설/상세공간은 추후 작업후 전송예정)
+	2020 - 10 - 30 : 퍼블 CSSjs수정 , 디지털배움터 찾아보기 퍼블작업
+	2020 - 10 - 30(2) : 퍼블 CSSjs수정 , 디지털배움터 찾아보기 퍼블작업
+	2020 - 11 - 03 : 퍼블 html,css수정(UI-OPS-PA-4.2.2.1.html)
+	2020 - 11 - 04 : 퍼블 html,css수정(UI-OPS-PA-5.2.2.html)
+	2020 - 11 - 05 : 퍼블 html,css수정(sub3/UI-OPS-PA-4.4.html, sub3/UI-OPS-PA-4.3.3.html, sub3/UI-OPS-PA-5.2.1.1.html , header)
+	2020 - 11 - 11 : 퍼블 메인작업
+</pre>
+	</div>
+
+	<h3>공통</h3>
+	<table class="basic list th-effect">
+	<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+	<thead>
+	<tr>
+		<th>번호</th>
+		<th>파일명</th>
+		<th>메뉴Path</th>
+		<th>화면설명</th>
+		<th>완료일</th>
+		<th>진행현황</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>guide/loading.html</td>
+		<td>로딩</td>
+		<td></td>
+		<td class="center">20201012</td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>main.html</td>
+		<td>메인</td>
+		<td><span class="red">신규 작업</span></td>
+		<td class="center">20201111</td>
+		<td class="center">완료</td>
+	</tr>
+	</tbody>
+	</table>
+
+	<h3>3. 디지털배움터</h3>
+	<table class="basic list th-effect">
+	<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+	<thead>
+	<tr>
+		<th>번호</th>
+		<th>파일명</th>
+		<th>메뉴Path</th>
+		<th>화면설명</th>
+		<th>완료일</th>
+		<th>진행현황</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.4.html</td>
+		<td>디지털배움터 > 강사·서포터즈 신청하기</td>
+		<td>팝업기능</td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.2.1.html</td>
+		<td>디지털배움터 > 디지털 배움터 찾아보기</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.3.1.1.html</td>
+		<td>디지털배움터 > 교육신청하기 > 교육신청하기 목록</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.3.1.html</td>
+		<td>디지털배움터 > 교육신청하기</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.3.2.html</td>
+		<td>디지털배움터 > 교육신청하기 > 교육신청하기 상세</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.3.3.html</td>
+		<td>디지털배움터 > 교육신청하기 > 교육신청하기 등록</td>
+		<td>팝업기</td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.3.html</td>
+		<td>디지털배움터 > 교육신청하기 > 교육신청자 등록</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.5.html</td>
+		<td>디지털배움터 > 강사·서포터즈 신청하기 > 강사·서포터즈 신청자 목록</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.2.2.1.html</td>
+		<td>디지털배움터 > 디지털 배움터 찾아보기 > 시설/공간 상세</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub3/UI-OPS-PA-4.2.2.2.html</td>
+		<td>디지털배움터 > 디지털 배움터 찾아보기 > 시설/공간 상세 > 이용후기</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	</tbody>
+	</table>
+
+	<h3>4. 고객지원센터</h3>
+	<table class="basic list th-effect">
+	<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+	<thead>
+	<tr>
+		<th>번호</th>
+		<th>파일명</th>
+		<th>메뉴Path</th>
+		<th>화면설명</th>
+		<th>완료일</th>
+		<th>진행현황</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.1.1.html</td>
+		<td>공지사항(list)</td>
+		<td class="red"></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.1.2.html</td>
+		<td>공지사항(view)</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.2.1.1.html</td>
+		<td>고객지원센터 > 소통게시판 > 문의하기 > 문의하기 등록</td>
+		<td>팝업기능</td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.2.1.2.html</td>
+		<td>고객지원센터 > 소통게시판 > 문의하기 > 문의하기 조회</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.2.1.3.html</td>
+		<td>고객지원센터 > 소통게시판 > 문의하기 > 문의하기 보기</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.2.1.4.html</td>
+		<td>고객지원센터 > 소통게시판 > 문의하기 > 문의하기 수정</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.2.1.5.html</td>
+		<td>본인인증</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.2.1.html</td>
+		<td>고객지원센터 > 소통게시판 > 문의하기</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.2.2.html</td>
+		<td>고객지원센터 > 소통게시판 > FAQ</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.2.3.1.html</td>
+		<td>고객지원센터 > 소통게시판 > 교육후기</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.5.1.html</td>
+		<td>고객지원센터 > 홍보관</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub4/UI-OPS-PA-5.5.1.1.html</td>
+		<td>고객지원센터 > 홍보관 > 자료 조회</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center">완료</td>
+	</tr>
+	</tbody>
+	</table>
+
+	<h3>5. 이용안내</h3>
+	<table class="basic list th-effect">
+	<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+	<thead>
+	<tr>
+		<th>번호</th>
+		<th>파일명</th>
+		<th>메뉴Path</th>
+		<th>화면설명</th>
+		<th>완료일</th>
+		<th>진행현황</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>sub5/UI-OPS-PA-6.1.html</td>
+		<td>이용안내 > 개인정보처리방침</td>
+		<td></td>
+		<td class="center"></td>
+		<td class="center"></td>
+	</tr>
+	</tbody>
+	</table>
+
+</div>
+</body>
+</html>

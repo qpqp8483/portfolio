@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.minicolors.css" />
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.minicolors.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/inje_common.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <dl id="skipNav">
+        <dt>바로가기</dt>
+        <dd><a href="#gnb">메뉴 바로가기</a></dd>
+        <dd><a href="#container">본문 바로가기</a></dd>
+    </dl>
+    <div id="wrap">
+        <div class="lnbWrap">
+            <h1><a href="#"><img src="../../images/img_logo.png" alt="우주전파센터 예경보시스템"></a></h1>
+            <ul id="lnb">
+                <li class="active"><a href="#">태양흑점폭발</a>
+                    <ul>
+                        <li class="active"><a href="">GOES X-ray</a></li>
+                        <li><a href="">태양전파관측</a></li>
+                        <li><a href="">태양활동 수준관측</a></li>
+                        <li><a href="">ASSA</a></li>
+                        <li><a href="">SDO</a></li>
+                        <li><a href="">GOES SUVI</a></li>
+                        <li><a href="">태양전파관측</a></li>
+                        <li><a href="">태양활동 수준관측</a></li>
+                        <li><a href="">ASSA</a></li>
+                        <li><a href="">SDO</a></li>
+                        <li><a href="">GOES SUVI</a></li>
+                        <li><a href="">태양전파관측</a></li>
+                        <li><a href="">태양활동 수준관측</a></li>
+                        <li><a href="">ASSA</a></li>
+                        <li><a href="">SDO</a></li>
+                        <li><a href="">GOES SUVI</a></li>
+                        <li><a href="">태양전파관측</a></li>
+                        <li><a href="">태양활동 수준관측</a></li>
+                        <li><a href="">ASSA</a></li>
+                        <li><a href="">SDO</a></li>
+                        <li><a href="">GOES SUVI</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">태양입자유입</a>
+                    <ul>
+                        <li><a href="">GOES Proton</a></li>
+                        <li><a href="">ACE SIS</a></li>
+                        <li><a href="">경험적 태양입자 예측모델</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">지자기교란</a>
+                    <ul>
+                        <li><a href="">Kp index(3hr, 1min)</a></li>
+                        <li><a href="">K index</a></li>
+                        <li><a href="">지자기교란 예측모델</a></li>
+                        <li><a href="">ENLIL</a></li>
+                        <li><a href="">SOHO</a></li>
+                        <li><a href="">DSCOVR</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전리권교란</a>
+                    <ul>
+                        <li><a href="">전리권 지수</a></li>
+                        <li><a href="">전리권 관측</a></li>
+                        <li><a href="">한국형 전리권 예측모델</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">데이터 표출 및 조회</a>
+                    <ul>
+                        <li><a href="">종합상황판</a></li>
+                        <li><a href="">자료통합비교</a></li>
+                        <li><a href="">데이터 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예보서비스</a>
+                    <ul>
+                        <li><a href="">1일 예보</a></li>
+                        <li><a href="">3일 예보</a></li>
+                        <li><a href="">27일 예보</a></li>
+                        <li><a href="">일일브리핑</a></li>
+                        <li><a href="">예보정확도 평가</a></li>
+                        <li><a href="">국내외 예보비교</a></li>
+                        <li><a href="">예보발송 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">경보서비스</a>
+                    <ul>
+                        <li><a href="">SMS 전송</a></li>
+                        <li><a href="">Email 전송</a></li>
+                        <li><a href="">FAX 전송</a></li>
+                        <li><a href="">사전알림서비스</a></li>
+                        <li><a href="">경보기준 관리</a></li>
+                        <li><a href="">경보상황 보고서 조회</a></li>
+                        <li><a href="">경보발송 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">시스템관리</a>
+                    <ul>
+                        <li><a href="">수요자 통계</a></li>
+                        <li><a href="">수요자관리(별도)</a></li>
+                        <li><a href="">사용자로그</a></li>
+                        <li><a href="">기관로고</a></li>
+                        <li><a href="">예보상황실 근무표</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">이슈관리</a></li>
+                        <li><a href="">메뉴관리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- //좌측메뉴 -->
+
+        <!-- 본문 -->
+        <div id="container">
+            <div id="contentTop">
+                <h2>3일 예보 상세</h2>
+                <div class="userJoin">
+                    <p><span>홍길동</span>님이 로그인하셨습니다</p>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+            <!-- content start -->
+            <div id="content">
+                <div class="tabBoxFrame">
+                    <ul class="tabBox">
+                        <li class="active"><a href="#">예보확률</a></li>
+                        <li><a href="#">요약 및 전망</a></li>
+                        <li><a href="#">분야별 영향 분석</a></li>
+                        <li><a href="#">지난 3일간 경보내역</a></li>
+                        <li><a href="#">흑점분석</a></li>
+                        <li><a href="#">CME관측내역</a></li>
+                        <li><a href="#">참고자료</a></li>
+                    </ul>
+                    <ul class="tabBox type2">
+                        <li><a href="#">SRS</a></li>
+                        <li><a href="#">ASSA</a></li>
+                        <li><a href="#">MATLAB</a></li>
+                        <li class="active"><a href="#">예보관</a></li>
+                        <li><a href="#">분석관</a></li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>예보관</h3>
+                    <div class="inner">
+                        <div class="topInfo">
+                            <ul>
+                                <li>
+                                    <span>발송일</span> 2021-07-01 11:00
+                                </li>
+                                <li>
+                                    <span>예보관</span> 홍길동
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- tableBox start -->
+                        <div class="tableBox">
+                            <table class="list tr_link">
+                                <!-- 클래스명 tr_link에 따라 리스트에 hover시 마우스포인트 변경 -->
+                                <caption>예보관에 대한 추가 내용이 기입되어있습니다.</caption>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">날짜</th>
+                                        <th scope="col">C</th>
+                                        <th scope="col">R1-R2</th>
+                                        <th scope="col">R3이상</th>
+                                        <th scope="col">S1-S2</th>
+                                        <th scope="col">S3이상</th>
+                                        <th scope="col">KP=4</th>
+                                        <th scope="col">G1-G2</th>
+                                        <th scope="col">G3이상</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2021-07-01</td>
+                                        <td>
+                                            <input type="text" title="C">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="R1-R2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="R3이상">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="S1-S2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="S3이상">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="KP=4">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="G1-G2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="G3이상">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021-07-01</td>
+                                        <td>
+                                            <input type="text" title="C">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="R1-R2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="R3이상">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="S1-S2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="S3이상">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="KP=4">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="G1-G2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="G3이상">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021-07-01</td>
+                                        <td>
+                                            <input type="text" title="C">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="R1-R2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="R3이상">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="S1-S2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="S3이상">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="KP=4">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="G1-G2">
+                                        </td>
+                                        <td>
+                                            <input type="text" title="G3이상">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- tableBox end -->
+                        <div class="btnBox alignRight">
+                            <a href="#" class="btn_small on">저장</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>3일 예보 확률 입력 데이터 조회</h3>
+                    <div class="inner">
+                        <div class="dataSearch">
+                            발송일로부터 <input type="text" value="" class="w50" title="날짜입력"> 일 전 <a href="#"
+                                class="dataSearch_btn">조회</a>
+                        </div>
+                        <!-- tableBox start -->
+                        <div class="tableBox">
+                            <table class="list tr_link">
+                                <!-- 클래스명 tr_link에 따라 리스트에 hover시 마우스포인트 변경 -->
+                                <caption>발송일 조회 결과의 작성자, 날짜, C, R1-R2, R3이상, S1-S2, S3이상, KP=4, G1-G2, G3이상의 정보가 기입되어
+                                    있습니다.
+                                </caption>
+                                <colgroup>
+                                    <col>
+                                    <col style="width:12%;">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">작성자</th>
+                                        <th scope="col">날짜</th>
+                                        <th scope="col">C</th>
+                                        <th scope="col">R1-R2</th>
+                                        <th scope="col">R3이상</th>
+                                        <th scope="col">S1-S2</th>
+                                        <th scope="col">S3이상</th>
+                                        <th scope="col">KP=4</th>
+                                        <th scope="col">G1-G2</th>
+                                        <th scope="col">G3이상</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>2021-07-01</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>50</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>2021-07-01</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>50</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>2021-07-01</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>50</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>2021-07-01</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>50</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- tableBox end -->
+                        <!-- paging start -->
+                        <div class="paging">
+                            <a href="#" class="firstPage">처음페이지</a>
+                            <a href="#" class="prevPage">이전페이지</a>
+                            <a href="#" class="num active">1</a>
+                            <a href="#" class="num">2</a>
+                            <a href="#" class="num">3</a>
+                            <a href="#" class="num">4</a>
+                            <a href="#" class="nextPage">다음페이지</a>
+                            <a href="#" class="lastPage">마지막페이지</a>
+                        </div>
+                        <!-- paging end -->
+                    </div>
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+        <!-- //본문 -->
+        <div id="footer">
+            <p class="copyright">Copyright © <br><span>Korean Space Weather Center.</span> <br>All rights reserved.</p>
+        </div>
+        <!-- 팝업 start -->
+        <div class="morePop">
+            <div class="popTop">
+                <h4>3일 예보 생성</h4>
+                <a href="#" class="btnClose">닫기버튼</a>
+            </div>
+            <div class="popMiddle">
+                <span class="title">기간설정</span>
+                <input type="text" class="useDatepicker w140 hasDatepicker" title="기간 선택 종료일" id="dp1631777207496">
+                <select title="시간선택" class="w65">
+                    <option>01</option>
+                </select>
+            </div>
+            <div class="popBottom">
+                <div class="btnWrap">
+                    <a href="#" onclick="" class="bgType">저장</a>
+                    <a href="#" onclick="" class="bdType btnClose">취소</a>
+                </div>
+            </div>
+        </div>
+        <!-- 팝업 end -->
+    </div>
+</body>
+
+</html>

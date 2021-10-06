@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+    <title>우주전파센터</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/inje/jquery.min.js"></script>
+    <script src="js/inje/jquery.plugin.js"></script>
+    <script src="js/inje/common.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <ul id="skipNav">
+        <li><a href="#gnb">주메뉴 바로가기</a></li>
+        <li><a href="#container">본문 바로가기</a></li>
+    </ul>
+    <div id="wrap">
+        <div id="header">
+            <div class="headerTop">
+                <div class="inner">
+                    <a href="#" title="새창열림" target="_blank" class="blankPage">우주전파환경 빅데이터 플랫폼</a>
+                    <a href="#" title="새창열림" target="_blank" class="blankPage">우주전파재난 AI경진대회</a>
+                    <ul class="time">
+                        <li><span class="date">2021-01-19</span>16:17<span class="nation">KST</span></li>
+                        <li><span class="date">2021-01-19</span>07:17<span class="nation">UTC</span></li>
+                    </ul>
+                    <ul class="other">
+                        <li><a href="#">로그아웃</a></li>
+                        <li><a href="#">ENGLISH</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="headerBottom">
+                <div class="inner">
+                    <h1><a href="#"><img src="./images/main/img_logo.png" alt="과학기술정보부 국립전파연구원 우주전파센터"></a></h1>
+                    <div id="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">정보공개</a>
+                                <div class="depthBox type1">
+                                    <div class="inner">
+                                        <div class="titleBox">
+                                            <strong>정보공개</strong>
+                                            <p>우주전파센터의 정보를 <br>알기 쉽게 제공합니다.</p>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li><a href="#">정보공개제도안내</a></li>
+                                            <li><a href="#">사전정보공표</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">정보목록</a></li>
+                                            <li><a href="#">정보공개청구</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">공공데이터개방</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">우주전파환경 빅데이터 플랫폼</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">예&middot;경보</a>
+                                <div class="depthBox type2">
+                                    <div class="inner">
+                                        <div class="titleBox">
+                                            <strong>예 &middot; 경보</strong>
+                                            <p>우주전파센터의 정보를 <br>알기 쉽게 제공합니다.</p>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li><a href="#">예경보 및 재난 알림</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">1일/3일/27일예보</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">1일 예보</a></li>
+                                                    <li><a href="#">3일 예보</a></li>
+                                                    <li><a href="#">27일 예보</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">월간단파 예보</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">춘추분기 태양전파간섭 예보</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">분석&middot;관측</a>
+                                <div class="depthBox type3">
+                                    <div class="inner">
+                                        <div class="titleBox">
+                                            <strong>분석&middot;관측</strong>
+                                            <p>우주전파센터의 정보를 <br>알기 쉽게 제공합니다.</p>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">태양흑점폭발(R)</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">태양활동 자동분석 모델</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">태양입자유입(S)</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">딥러닝 기반 태양 양성자 예측 모델</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">지자기교란(G)</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">태양풍 ENLIL 모델</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">전리권교란(I) <br>(구:전리층영향)</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">한국형 전리권 예측모델</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">산업분야피해분석</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">산업분야경보지수</a></li>
+                                                    <li><a href="#">위성</a></li>
+                                                    <li><a href="#">항공</a></li>
+                                                    <li><a href="#">전력</a></li>
+                                                    <li><a href="#">항법</a></li>
+                                                    <li><a href="#">통신</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">실시간 관측정보</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">우주전파환경데이터</a></li>
+                                                    <li><a href="#">지상관측데이터</a></li>
+                                                    <li><a href="#">DSCOVR관측데이터</a></li>
+                                                    <li><a href="#">GOES관측데이터</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">관측기</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">관측기</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">우주전파환경의 이해</a>
+                                <div class="depthBox type4">
+                                    <div class="inner">
+                                        <div class="titleBox">
+                                            <strong>우주전파환경의 이해</strong>
+                                            <p>우주전파센터의 정보를 <br>알기 쉽게 제공합니다.</p>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li><a href="#">만화로 보는 KSWC</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">전문정보</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">우주전파환경이 미치는 영향</a></li>
+                                                    <li><a href="#">태양활동과 지구환경의 변화</a></li>
+                                                    <li><a href="#">국내 우주전파재난 개요 및 대응체계</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">예경보 등급</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">용어사전</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">소통&middot;참여</a>
+                                <div class="depthBox type5">
+                                    <div class="inner">
+                                        <div class="titleBox">
+                                            <strong>소통&middot;참여</strong>
+                                            <p>우주전파센터의 정보를 <br>알기 쉽게 제공합니다.</p>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li><a href="#">공지사항</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">행사</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">개요</a></li>
+                                                    <li><a href="#">일정</a></li>
+                                                    <li><a href="#">자료실</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">교육/견학 신청</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">교육 신청</a></li>
+                                                    <li><a href="#">견학 신청</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">민원신청</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">설문조사</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">센터소개</a>
+                                <div class="depthBox type6">
+                                    <div class="inner">
+                                        <div class="titleBox">
+                                            <strong>센터소개</strong>
+                                            <p>우주전파센터의 정보를 <br>알기 쉽게 제공합니다.</p>
+                                        </div>
+                                        <ul class="depth2">
+                                            <li><a href="#">센터장 인사말</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">센터소개</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li><a href="#">연구활동</a></li>
+                                            <li><a href="#">조직도</a></li>
+                                        </ul>
+                                        <ul class="depth2">
+                                            <li>
+                                                <a href="#">찾아오시는 길</a>
+                                                <ul class="depth3">
+                                                    <li><a href="#">제주 전체 약도</a></li>
+                                                    <li><a href="#">센터 주변 약도</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="searchLink">통합검색열기</a>
+                    <div class="searchOpenBox">
+                        <span>통합검색</span>
+                        <input type="text" class="topSearch" title="통합검색입력창" placeholder="검색어를 입력하세요">
+                        <input type="button" class="topSearchBtn" value="검색" title="통합검색 버튼">
+                        <a href="#" class="searchboxClose">닫기</a>
+                    </div>
+                    <a href="#" class="allMenuOpen">전체메뉴 열기</a>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- allMenu start -->
+        <div id="allMenuBox">
+            <ul>
+                <li>
+                    <a href="#">정보공개</a>
+                    <ul class="depth2">
+                        <li><a href="#">정보공개제도안내</a></li>
+                        <li><a href="#">사전정보공표</a></li>
+                        <li><a href="#">정보목록</a></li>
+                        <li><a href="#">정보공개청구</a></li>
+                        <li><a href="#">공공데이터개방</a></li>
+                        <li><a href="#">우주전파환경 빅데이터 플랫폼</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">예&middot;경보</a>
+                    <ul class="depth2">
+                        <li><a href="#">예경보 및 재난 알림</a></li>
+                        <li>
+                            <a href="#">1일/3일/27일예보</a>
+                            <ul class="depth3">
+                                <li><a href="#">1일 예보</a></li>
+                                <li><a href="#">3일 예보</a></li>
+                                <li><a href="#">27일 예보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">월간단파 예보</a></li>
+                        <li><a href="#">춘추분기 태양전파간섭 예보</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">분석&middot;관측</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="#">태양흑점폭발(R)</a>
+                            <ul class="depth3">
+                                <li><a href="#">태양활동 자동분석 모델</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">태양입자유입(S)</a>
+                            <ul class="depth3">
+                                <li><a href="#">딥러닝 기반 태양 양성자 예측 모델</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">지자기교란(G)</a>
+                            <ul class="depth3">
+                                <li><a href="#">태양풍 ENLIL 모델</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">전리권교란(I) <br>(구:전리층영향)</a>
+                            <ul class="depth3">
+                                <li><a href="#">한국형 전리권 예측모델</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">산업분야피해분석</a>
+                            <ul class="depth3">
+                                <li><a href="#">산업분야경보지수</a></li>
+                                <li><a href="#">위성</a></li>
+                                <li><a href="#">항공</a></li>
+                                <li><a href="#">전력</a></li>
+                                <li><a href="#">항법</a></li>
+                                <li><a href="#">통신</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">실시간 관측정보</a>
+                            <ul class="depth3">
+                                <li><a href="#">우주전파환경데이터</a></li>
+                                <li><a href="#">지상관측데이터</a></li>
+                                <li><a href="#">DSCOVR관측데이터</a></li>
+                                <li><a href="#">GOES관측데이터</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">관측기</a>
+                            <ul class="depth3">
+                                <li><a href="#">관측기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">우주전파환경의 이해</a>
+                    <ul class="depth2">
+                        <li><a href="#">만화로 보는 KSWC</a></li>
+                        <li>
+                            <a href="#">전문정보</a>
+                            <ul class="depth3">
+                                <li><a href="#">우주전파환경이 미치는 영향</a></li>
+                                <li><a href="#">태양활동과 지구환경의 변화</a></li>
+                                <li><a href="#">국내 우주전파재난 개요 및 대응체계</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">예경보 등급</a></li>
+                        <li><a href="#">용어사전</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소통&middot;참여</a>
+                    <ul class="depth2">
+                        <li><a href="#">공지사항</a></li>
+                        <li>
+                            <a href="#">행사</a>
+                            <ul class="depth3">
+                                <li><a href="#">개요</a></li>
+                                <li><a href="#">일정</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">교육/견학 신청</a>
+                            <ul class="depth3">
+                                <li><a href="#">교육 신청</a></li>
+                                <li><a href="#">견학 신청</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">민원신청</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">설문조사</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">센터소개</a>
+                    <ul class="depth2">
+                        <li><a href="#">센터장 인사말</a></li>
+                        <li><a href="#">센터소개</a></li>
+                        <li><a href="#">연구활동</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li>
+                            <a href="#">찾아오시는 길</a>
+                            <ul class="depth3">
+                                <li><a href="#">제주 전체 약도</a></li>
+                                <li><a href="#">센터 주변 약도</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" class="allMenuClose">전체메뉴 닫기</a>
+        </div>
+        <!-- allMenu end -->
+
+        <!-- container start -->
+        <div id="container" class="main">
+            <div class="inner">
+                <!-- visual start -->
+                <div class="visual">
+                    <span>KOREAN SPACE WEATHER CENTER</span>
+                    <p>우주전파재난 걱정 없는 <br> <strong>안전한 대한민국</strong>을 만들겠습니다.</p>
+                    <div class="warningGrade">
+                        <strong class="title"><span>우주전파재난</span> <br>위기경보</strong>
+                        <ul>
+                            <li>관심</li>
+                            <li class="active">주의</li>
+                            <li>경계</li>
+                            <li>심각</li>
+                        </ul>
+                    </div>
+                    <div class="warningInfo">
+                        <strong class="title">예경보 및 재난 알림</strong>
+                        <div class="warningSlide">
+                            <ul>
+                                <li>
+                                    <a href="#">태양입자유입 1단계 경보상황 발생 및 해제 알림 알림알림</a>
+                                    <span class="date">2021-05-10</span>
+                                </li>
+                                <li>
+                                    <a href="#">태양입자유입 1단계 경보상황 발생 및 해제 알림</a>
+                                    <span class="date">2021-05-10</span>
+                                </li>
+                            </ul>
+                            <div class="slick-auto">
+                                <button type="button" class="slick-button-start">재생</button>
+                                <button type="button" class="slick-button-stop">멈춤</button>
+                            </div>
+                            <div class="slick-arrow">
+                                <button type="button" class="slick-button-prev">이전</button>
+                                <button type="button" class="slick-button-next">다음</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- visual end -->
+                <!-- todayNatural start -->
+                <div class="todayNatural">
+                    <h2><span>오늘의</span> 우주전파환경</h2>
+                    <div class="naturalList">
+                        <ul>
+                            <li>
+                                <strong>태양 흑점수</strong>
+                                <ul>
+                                    <li><span>상대흑점수</span><strong>26</strong></li>
+                                    <li><span>F10.7</span><strong>76</strong></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>지자기 활동</strong>
+                                <ul>
+                                    <li><span>현재</span><strong>Kp=1</strong></li>
+                                    <li><span>24시간 최대</span><strong>Kp=3</strong></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>행성간자기장</strong>
+                                <ul>
+                                    <li><span>B Total</span><strong>3.4 nt</strong></li>
+                                    <li><span>Bz</span><strong>0.8 nt</strong></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>태양풍</strong>
+                                <ul>
+                                    <li><span>속도</span><strong>454.9 km/s</strong></li>
+                                    <li><span>입자밀도</span><strong>1.6 protons/cm3</strong></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="more">더보기</a>
+                </div>
+                <!-- todayNatural end -->
+                <!-- realTimeData start -->
+                <div class="realTimeData">
+                    <div class="tabContent">
+                        <ul class="tabBar">
+                            <li class="active"><a href="#"><span>우주전파</span> 예보</a></li>
+                            <li><a href="#"><span>실시간</span> 관측데이터</a></li>
+                        </ul>
+                        <div class="tabPage active">
+                            <ul class="forecast">
+                                <li>
+                                    <strong>태양흑접폭발</strong>
+                                    <table class="forecastTable type1">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:30%;">
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">등급</th>
+                                                <th scope="col">0-24 hr</th>
+                                                <th scope="col">24-48 hr</th>
+                                                <th scope="col">48-72 hr</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>R1-R2</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>R3 이상</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <strong>태양입자유입</strong>
+                                    <table class="forecastTable type2">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:30%;">
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">등급</th>
+                                                <th scope="col">0-24 hr</th>
+                                                <th scope="col">24-48 hr</th>
+                                                <th scope="col">48-72 hr</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>S1-S2</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>S3 이상</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <strong>지자기교란</strong>
+                                    <table class="forecastTable type3">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:30%;">
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">등급</th>
+                                                <th scope="col">0-24 hr</th>
+                                                <th scope="col">24-48 hr</th>
+                                                <th scope="col">48-72 hr</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>G1-G2</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>G3 이상</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                                <td>1%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabPage">
+                            <div class="dataSlide">
+                                <ul>
+                                    <li><img src="./images/main/img_test01.jpg" alt="테스트이미지1"></li>
+                                    <li><img src="./images/main/img_test02.jpg" alt="테스트이미지2"></li>
+                                    <li><img src="./images/main/img_test03.jpg" alt="테스트이미지3"></li>
+                                    <li><img src="./images/main/img_test02.jpg" alt="테스트이미지2"></li>
+                                </ul>
+                            </div>
+                            <div class="slick-arrow">
+                                <button type="button" class="slick-button-prev">이전</button>
+                                <button type="button" class="slick-button-next">다음</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- realTimeData end -->
+                <!-- walkingRating start -->
+                <div class="walkingRating">
+                    <h2><span>경보</span> 등급</h2>
+                    <div class="ratingTable">
+                        <table>
+                            <caption>48시간, 24시간, 현재의 경보등급에 대한 정보가 기입되어 있습니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="row">-48hr</th>
+                                    <th scope="row">-24hr</th>
+                                    <th scope="row">현재</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="./images/main/icon_lank_ro.png" alt="">RO
+                                    </td>
+                                    <td>
+                                        <img src="./images/main/icon_lank_ro.png" alt="">RO
+                                    </td>
+                                    <td>
+                                        <img src="./images/main/icon_lank_ro.png" alt="">RO
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/main/icon_lank_so.png" alt="">SO
+                                    </td>
+                                    <td>
+                                        <img src="./images/main/icon_lank_so.png" alt="">SO
+                                    </td>
+                                    <td>
+                                        <img src="./images/main/icon_lank_so.png" alt="">SO
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./images/main/icon_lank_go.png" alt="">GO
+                                    </td>
+                                    <td>
+                                        <img src="./images/main/icon_lank_go.png" alt="">GO
+                                    </td>
+                                    <td>
+                                        <img src="./images/main/icon_lank_go.png" alt="">GO
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="#" class="more">더보기</a>
+                </div>
+                <!-- walkingRating end -->
+                <!-- banner start -->
+                <div class="bannerBox">
+                    <ul>
+                        <li><a href="#" title="새창열림" target="_blank"><span>산업분야 <br><strong>경보지수</strong></span></a>
+                        </li>
+                        <li><a href="#" title="새창열림" target="_blank"><span>우주전파환경 <br><strong>빅데이터
+                                        플랫폼</strong></span></a></li>
+                        <li><a href="#" title="새창열림" target="_blank"><span>우주전파재난 <br><strong>AI경진대회</strong></span></a>
+                        </li>
+                        <li><a href="#" title="새창열림" target="_blank"><span>우주전파센터 <br><strong>페이스북</strong></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- banner start -->
+            </div>
+            <div class="overBg">
+                <div class="type1">
+                    <span class="box1"></span>
+                    <span class="box2"></span>
+                    <span class="box3"></span>
+                    <span class="box4"></span>
+                    <span class="box5"></span>
+                    <span class="box6"></span>
+                    <span class="box7"></span>
+                </div>
+            </div>
+        </div>
+        <!-- container end -->
+        <div id="footer">
+            <div class="inner">
+                <img src="./images/main/img_footerLogo.png" alt="과학기술정보부 국립전파연구원 우주전파센터">
+                <ul>
+                    <li><a href="#" class="active">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리방침</a></li>
+                    <li><a href="#">예경보 알림서비스 신청/해지</a></li>
+                    <li><a href="#">견학신청 안내</a></li>
+                    <li><a href="#">피해사례접수</a></li>
+                </ul>
+                <select title="기관바로가기">
+                    <option>기관바로가기</option>
+                </select>
+                <div>
+                    <span>63025 제주시 한림읍 귀덕로 198-6</span>
+                    <span>대표전화: 064-797-7011</span>
+                    <span>예보관련 문의: 064-797-7049</span>
+                    <span>이메일: spaceweather@korea.kr</span>
+                </div>
+                <p>Copyright © Korean Space Weather Center. All rights reserved.</p>
+            </div>
+        </div>
+        <span id="overlay"></span>
+    </div>
+</body>
+
+</html>

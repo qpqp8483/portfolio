@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../css/font.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.minicolors.css" />
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.minicolors.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/inje_common.js"></script>
+    <script src="../../js/common.js"></script>
+    <script>
+        $(function(){
+            //이미지 자르기 start
+            var SIZE = 250;
+            var canvas = document.getElementById("bCanvas");
+            canvas.width = SIZE;
+            canvas.height = SIZE;
+            var ctx = canvas.getContext('2d');
+
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = "#ff0000";
+
+            var sX, sY, cX, cY;
+            var width, height;
+            var canvasX = $("#bCanvas").offset().left;
+            var canvasY = $("#bCanvas").offset().top;
+            var draw = false;
+
+            // click 시 draw 시작
+            $("#bCanvas").mousedown(function (e) {
+                sX = parseInt(e.clientX - canvasX);
+                sY = parseInt(e.clientY - canvasY);
+                draw = true;
+            });
+            $("#bCanvas").mousemove(function (e) {
+                if (draw) {
+                    cX = parseInt(e.clientX - canvasX);
+                    cY = parseInt(e.clientY - canvasY);
+                    ctx.clearRect(0, 0, canvas.width, canvas.height); //clear canvas
+                    ctx.strokeRect(sX, sY, cX - sX, cY - sY);
+                }
+            });
+            // 마우스 놓으면 rectangle 완성 및 popup 생성
+            $("#bCanvas").mouseup(function (e) {
+                draw = false;
+
+                // 일정 크기 이상의 사각형일때 crop
+                var threshold = 3;
+                if (Math.abs(cX - sX) > threshold && Math.abs(cY - sY) > threshold) {
+                    drawCanvas(sX, sY, cX - sX, cY - sY);
+                }
+            });
+
+            function drawCanvas(x, y, width, height) {
+                $(".img_after").children().remove();
+                var canvas = document.createElement("canvas");
+                var img = new window.Image();
+                var w, h;
+
+                if (Math.abs(width) <= Math.abs(height)) {
+                    h = SIZE;
+                    w = h * width / height;
+                } else {
+                    w = SIZE;
+                    h = w * height / width;
+                }
+                canvas.width = w;
+                canvas.height = h;
+                img.addEventListener("load", function () {
+                    var RATE = img.width / 250;
+                    canvas.getContext('2d').drawImage(img, x * RATE, y * RATE, width * RATE, height * RATE, (w - w *
+                            0.9) / 2, (h - h * 0.9) / 2,
+                        w * 0.9, h * 0.9);
+                }, false);
+                var imgSrc = $('.img_before img').attr('src');
+                img.src = imgSrc;
+                $(".img_after").append(canvas);
+            } //이미지 자르기 end
+        });
+    </script>
+</head>
+
+<body>
+    <dl id="skipNav">
+        <dt>바로가기</dt>
+        <dd><a href="#gnb">메뉴 바로가기</a></dd>
+        <dd><a href="#container">본문 바로가기</a></dd>
+    </dl>
+    <div id="wrap">
+        <div class="lnbWrap">
+            <h1><a href="#"><img src="../../images/img_logo.png" alt="우주전파센터 예경보시스템"></a></h1>
+            <ul id="lnb">
+                <li class="active"><a href="#">태양흑점폭발</a>
+                    <ul>
+                       <li class="active"><a href="">GOES X-ray</a></li>
+                       <li><a href="">태양전파관측</a></li>
+                       <li><a href="">태양활동 수준관측</a></li>
+                       <li><a href="">ASSA</a></li>
+                       <li><a href="">SDO</a></li>
+                       <li><a href="">GOES SUVI</a></li>
+                       <li><a href="">태양전파관측</a></li>
+                       <li><a href="">태양활동 수준관측</a></li>
+                       <li><a href="">ASSA</a></li>
+                       <li><a href="">SDO</a></li>
+                       <li><a href="">GOES SUVI</a></li>
+                       <li><a href="">태양전파관측</a></li>
+                       <li><a href="">태양활동 수준관측</a></li>
+                       <li><a href="">ASSA</a></li>
+                       <li><a href="">SDO</a></li>
+                       <li><a href="">GOES SUVI</a></li>
+                       <li><a href="">태양전파관측</a></li>
+                       <li><a href="">태양활동 수준관측</a></li>
+                       <li><a href="">ASSA</a></li>
+                       <li><a href="">SDO</a></li>
+                       <li><a href="">GOES SUVI</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">태양입자유입</a>
+                    <ul>
+                        <li><a href="">GOES Proton</a></li>
+                        <li><a href="">ACE SIS</a></li>
+                        <li><a href="">경험적 태양입자 예측모델</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">지자기교란</a>
+                    <ul>
+                        <li><a href="">Kp index(3hr, 1min)</a></li>
+                        <li><a href="">K index</a></li>
+                        <li><a href="">지자기교란 예측모델</a></li>
+                        <li><a href="">ENLIL</a></li>
+                        <li><a href="">SOHO</a></li>
+                        <li><a href="">DSCOVR</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전리권교란</a>
+                    <ul>
+                        <li><a href="">전리권 지수</a></li>
+                        <li><a href="">전리권 관측</a></li>
+                        <li><a href="">한국형 전리권 예측모델</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">데이터 표출 및 조회</a>
+                    <ul>
+                        <li><a href="">종합상황판</a></li>
+                        <li><a href="">자료통합비교</a></li>
+                        <li><a href="">데이터 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예보서비스</a>
+                    <ul>
+                        <li><a href="">1일 예보</a></li>
+                        <li><a href="">3일 예보</a></li>
+                        <li><a href="">27일 예보</a></li>
+                        <li><a href="">일일브리핑</a></li>
+                        <li><a href="">예보정확도 평가</a></li>
+                        <li><a href="">국내외 예보비교</a></li>
+                        <li><a href="">예보발송 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">경보서비스</a>
+                    <ul>
+                        <li><a href="">SMS 전송</a></li>
+                        <li><a href="">Email 전송</a></li>
+                        <li><a href="">FAX 전송</a></li>
+                        <li><a href="">사전알림서비스</a></li>
+                        <li><a href="">경보기준 관리</a></li>
+                        <li><a href="">경보상황 보고서 조회</a></li>
+                        <li><a href="">경보발송 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">시스템관리</a>
+                    <ul>
+                        <li><a href="">수요자 통계</a></li>
+                        <li><a href="">수요자관리(별도)</a></li>
+                        <li><a href="">사용자로그</a></li>
+                        <li><a href="">기관로고</a></li>
+                        <li><a href="">예보상황실 근무표</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">이슈관리</a></li>
+                        <li><a href="">메뉴관리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- //좌측메뉴 -->
+
+        <!-- 본문 -->
+        <div id="container">
+            <div id="contentTop">
+                <h2>자료통합비교</h2>
+                <div class="userJoin">
+                    <p><span>홍길동</span>님이 로그인하셨습니다</p>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+            <!-- content start -->
+            <div id="content">
+                <!-- 검색박스 start -->
+                <div class="searchBox mgb15">
+                    <ul class="searchList col2">
+                        <li>
+                            <span class="title">기간 설정</span>
+                            <input type="text" class="useDatepicker w140" title="기간 선택 시작일">
+                            <select title="시간선택" class="w65">
+                                <option>01</option>
+                            </select>
+                            ~
+                            <input type="text" class="useDatepicker w140" title="기간 선택 종료일">
+                            <select title="시간선택" class="w65">
+                                <option>01</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="title">데이터 구간</span>
+                            <select title="시간선택" class="w90">
+                                <option>3시간</option>
+                            </select>
+                        </li>
+                        <li class="colAll">
+                            <span class="title">데이터분류</span>
+                            <select title="국내,국외 설정" class="w90">
+                                <option>국내</option>
+                            </select>
+                            <select title="지역 설정" class="w90">
+                                <option>이천</option>
+                            </select>
+                            <select title="태양활동 설정" class="w90">
+                                <option>태양활동</option>
+                            </select>
+                            <select title="GHZ 설정" class="w90">
+                                <option>2.8GHZ</option>
+                            </select>
+                            <select title="컬럼 설정" class="w90">
+                                <option>컬럼</option>
+                            </select>
+                            <select title="시간 설정" class="w90">
+                                <option>1Min</option>
+                            </select>
+                            <div class="checkTxt mgb0">
+                                <span class="checkTitle">
+                                    <label><input type="checkbox" name="MaxCount" title="Max Count"><span
+                                            class="checkIcon">Max Count</span></label>
+                                </span>
+                                <input type="text" class="textBox" title="Max Count 입력창">
+                            </div>
+                            <div class="checkTxt mgb0">
+                                <span class="checkTitle">
+                                    <label><input type="checkbox" name="레이어설정" title="레이어설정"><span
+                                            class="checkIcon">레이어설정</span></label>
+                                </span>
+                                <input type="text" class="textBox" title="레이어설정 입력창">
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn_search">검색</a>
+                </div>
+                <!-- 검색박스 end -->
+                <!-- section start -->
+                <div class="section">
+                    <h3>영상자료 표출</h3>
+                    <div class="inner_search">
+                        <ul>
+                            <li>
+                                <span class="title">기간 설정</span>
+                                <input type="text" class="useDatepicker w140" title="기간 선택 시작일">
+                                <select title="시간선택" class="w65">
+                                    <option>01</option>
+                                </select>
+                            </li>
+                            <li>
+                                <span class="title">이미지분류</span>
+                                <select title="국내,국외 설정" class="w90">
+                                    <option>국내</option>
+                                </select>
+                                <select title="지역 설정" class="w90">
+                                    <option>이천</option>
+                                </select>
+                                <select title="태양활동 설정" class="w90">
+                                    <option>태양활동</option>
+                                </select>
+                                <select title="GHZ 설정" class="w90">
+                                    <option>2.8GHZ</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inner">
+                        <div class="img_editbox">
+                            <div class="img_beforebox">
+                                <div class="num_btn">
+                                    <input type="button" value="-10" title="-10">
+                                    <input type="button" value="-5" title="-5">
+                                    <input type="button" value="-1" title="-1">
+                                    <input type="button" value="+1" title="+1">
+                                    <input type="button" value="+5" title="+5">
+                                    <input type="button" value="+10" title="+10">
+                                </div>
+                                <div class="img_before">
+                                    <canvas id="bCanvas"></canvas>
+                                    <img src="../../images/testimg_cut.jpg" alt="테스트이미지" class="img_cut">
+                                </div>
+                            </div>
+                            <div class="img_afterebox">
+                                <a href="#" class="apply_btn">적용</a>
+                                <div class="img_after">
+
+                                </div>
+                            </div>
+                            <div class="img_listBox">
+                                <ul class="img_list">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div class="btn_after_editbox">
+                                    <input type="text" placeholder="프레임 설정" class="nomal">
+                                    <input type="text" placeholder="이미지수 설정" class="nomal">
+                                    <a href="#" class="btn_m on ">저장</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- section end -->
+                <!-- section start -->
+                <div class="section">
+                    <h3>그래프 표출 </h3>
+                    <a href="#" class="option_pop_open">설정열기</a>
+                    <div class="option_pop w390">
+                        <a href="#" class="option_pop_close">닫기</a>
+                        <ul class="poplist">
+                            <li>
+                                <select title="그래프&차트 선택" class="col2">
+                                    <option>그래프&차트</option>
+                                </select>
+                                <select title="그래프 선택" class="col2">
+                                    <option>라인 그래프</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="text" class="useDatepicker w130">
+                                <select title="시간선택">
+                                    <option>03</option>
+                                </select>
+                                ~
+                                <input type="text" class="useDatepicker w130">
+                                <select title="시간선택">
+                                    <option>03</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select title="국내,국외선택" class="col4">
+                                    <option>국내</option>
+                                </select>
+                                <select title="지역선택" class="col4">
+                                    <option>이천</option>
+                                </select>
+                                <select title="태양활동선택" class="col4">
+                                    <option>태양활동</option>
+                                </select>
+                                <select title="GHZ선택" class="col4">
+                                    <option>2.8GHZ</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select title="컬럼 선택" class="w310">
+                                    <option>표출 대상 컬럼</option>
+                                </select>
+                                <input type="button" value="선택" class="btn_small">
+                            </li>
+                            <li>
+                                <div class="optionList">
+                                    <div class="checkTxt col2">
+                                        <span class="checkIcon">Title</span>
+                                        <input type="text" class="textBox" title="Title 입력창">
+                                    </div>
+                                    <div class="checkTxt col2">
+                                        <span class="checkIcon">Label</span>
+                                        <input type="text" class="textBox" title="Label 입력창">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="optionList">
+                                    <div class="checkTxt col2">
+                                        <span class="checkIcon">Maker</span>
+                                        <input type="text" class="textBox" title="Maker 입력창">
+                                    </div>
+                                    <div class="checkTxt col2">
+                                        <span class="checkIcon">Line</span>
+                                        <input type="text" class="textBox" title="Line 입력창">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label><input type="checkbox" name="maxNum" title="최대값"><span
+                                        class="checkIcon">최대값</span></label>
+                                <label><input type="checkbox" name="minNum" title="최소값"><span
+                                        class="checkIcon">최소값</span></label>
+                                <label><input type="checkbox" name="YMin_YMax" title="Y min ~ Y max"><span
+                                        class="checkIcon">Y min ~ Y max</span></label>
+                            </li>
+                            <li>
+                                <label><input type="checkbox" name="Xaxis" title="Xaxis"><span
+                                        class="checkIcon">Yaxis</span></label>
+                                <label><input type="checkbox" name="Yaxis" title="Yaxis"><span
+                                        class="checkIcon">Data</span></label>
+                                <label><input type="checkbox" name="Logo" title="Logo"><span
+                                        class="checkIcon">Logo</span></label>
+                                <label><input type="checkbox" name="Data" title="Data"><span
+                                        class="checkIcon">Data</span></label>
+                            </li>
+                            <li>
+                                <div class="optionList">
+                                    <div class="checkTxt">
+                                        <span class="checkTitle col2">
+                                            <label><input type="checkbox" name="실시간" title="실시간"><span
+                                                    class="checkIcon">실시간</span></label>
+                                        </span>
+                                        <input type="text" class="textBox" title="실시간 입력창">
+                                    </div>
+                                    <div class="checkTxt col2">
+                                        <span class="checkIcon">특정값</span>
+                                        <input type="text" class="textBox" title="특정값 입력창">
+                                        <button class="txtSearch">검색</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn_small on">적용</a>
+                    </div>
+                    <div class="inner">
+                        <img src="../../images/img_test03.jpg" alt="테스트이미지">
+                    </div>
+                </div>
+                <!-- section end -->
+                <!-- section start -->
+                <div class="colBox col2">
+                    <div class="section">
+                        <h3>이미지 자료 조회</h3>
+                        <a href="#" class="option_pop_open">설정열기</a>
+                        <div class="option_pop w390">
+                            <a href="#" class="option_pop_close">닫기</a>
+                            <ul class="poplist">
+                                <li>
+                                    <select title="데이터 분류 선택 1" class="col2">
+                                        <option>데이터 분류</option>
+                                    </select>
+                                    <select title="데이터 분류 선택 2" class="col2">
+                                        <option>데이터 분류</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="text" class="useDatepicker w130">
+                                    <select title="시간선택">
+                                        <option>03</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <div class="optionList">
+                                        <div class="checkTxt">
+                                            <span class="checkTitle col2">
+                                                <label><input type="checkbox" name="실시간" title="실시간"><span
+                                                        class="checkIcon">실시간</span></label>
+                                            </span>
+                                            <input type="text" class="textBox" title="실시간 입력창">
+                                        </div>
+                                        <div class="checkTxt col2">
+                                            <span class="checkIcon">특정값</span>
+                                            <input type="text" class="textBox" title="특정값 입력창">
+                                            <button class="txtSearch">검색</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn_small on">적용</a>
+                        </div>
+                        <div class="inner">
+                            <img src="../../images/img_test10.png" alt="테스트이미지">
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h3>이미지 자료 조회</h3>
+                        <a href="#" class="option_pop_open">설정열기</a>
+                        <div class="option_pop w390">
+                            <a href="#" class="option_pop_close">닫기</a>
+                            <ul class="poplist">
+                                <li>
+                                    <select title="데이터 분류 선택 1" class="col2">
+                                        <option>데이터 분류</option>
+                                    </select>
+                                    <select title="데이터 분류 선택 2" class="col2">
+                                        <option>데이터 분류</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="text" class="useDatepicker w130">
+                                    <select title="시간선택">
+                                        <option>03</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <div class="optionList">
+                                        <div class="checkTxt">
+                                            <span class="checkTitle col2">
+                                                <label><input type="checkbox" name="실시간" title="실시간"><span
+                                                        class="checkIcon">실시간</span></label>
+                                            </span>
+                                            <input type="text" class="textBox" title="실시간 입력창">
+                                        </div>
+                                        <div class="checkTxt col2">
+                                            <span class="checkIcon">특정값</span>
+                                            <input type="text" class="textBox" title="특정값 입력창">
+                                            <button class="txtSearch">검색</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn_small on">적용</a>
+                        </div>
+                        <div class="inner">
+                            <img src="../../images/img_test10.png" alt="테스트이미지">
+                        </div>
+                    </div>
+                </div>
+                <!-- section end -->
+            </div>
+            <!-- content end -->
+        </div>
+        <!-- //본문 -->
+        <div id="footer">
+            <p class="copyright">Copyright © <br><span>Korean Space Weather Center.</span> <br>All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

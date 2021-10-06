@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>주민등록번호변경위원회</title>
+    <link rel="stylesheet" type="text/css" href="../css/font.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.plugin.js"></script>
+    <script src="../js/inje_common.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/content.js"></script>
+</head>
+<body>
+    <dl id="skipNav">
+        <dd><a href="#gnb">메뉴 바로가기</a></dd>
+        <dd><a href="#container">본문 바로가기</a></dd>
+    </dl>
+    <div id="wrap">
+        <!-- header start -->
+        <div id="header">
+            <div class="inner">
+                <h1><a href="/index.html"><img src="../images/common/img_logo.png" alt="행정안전부 주민등록변경위원회"></a></h1>
+                <!-- gnb start -->
+                <div id="gnb">
+                    <ul class="depth1">
+                        <li>
+                            <a href="./sub1/sub1_1.html">제도안내</a>
+                            <ul class="depth2">
+                                <li><a href="./sub1/sub1_1.html">제도개요</a></li>
+                                <li><a href="./sub1/sub1_2.html">신청대상안내</a></li>
+                                <li><a href="#">입증자료안내</a></li>
+                                <li><a href="#">처리절차안내</a></li>
+                                <li><a href="#">후속조치안내</a></li>
+                                <li><a href="#">자주하는질문</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">민원&middot;소식</a>
+                            <ul class="depth2">
+                                <li><a href="#">나의 변경신청</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">홍보자료</a></li>
+                                <li><a href="#">국민신문고</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정책자료</a>
+                            <ul class="depth2">
+                                <li><a href="#">법령정보</a></li>
+                                <li><a href="#">관련서식</a></li>
+                                <li><a href="#">간행물</a></li>
+                                <li><a href="#">정책연구</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">기관소개</a>
+                            <ul class="depth2">
+                                <li><a href="#">위원장 인사말 / 역대위원장</a></li>
+                                <li><a href="#">위원 소개</a></li>
+                                <li><a href="#">기구 연혁</a></li>
+                                <li><a href="#">조직안내</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정보공개</a>
+                            <ul class="depth2">
+                                <li><a href="#">정보공개안내</a></li>
+                                <li><a href="#">사전정보공개</a></li>
+                                <li><a href="https://www.open.go.kr/com/main/mainView.do" target="_blank"
+                                        title="새창 열림">정보공개 청구</a></li>
+                                <li><a href="#">공공데이터 개방</a></li>
+                                <li><a href="#">비공개 대상정보</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- gnb end -->
+                <a href="#" class="myInquiry">나의 변경신청 조회</a>
+                <a href="#" class="allgnbOpen">전체메뉴 열기</a>
+                <div class="mainSearchBox">
+                    <form method="POST" action="" name="" class="form_bubble">
+                        <input type="text" name="" class="mainSearch" placeholder="관련서식검색" title="관련서식검색">
+                        <input type="submit" class="btn_topSearch" value="검색" title="검색버튼">
+                    </form>
+                    <a href="#" class="allSearch">통합검색</a>
+                </div>
+            </div>
+            <div class="allGnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="./sub1/sub1_1.html">제도안내</a>
+                        <ul class="depth2">
+                            <li><a href="./sub1/sub1_1.html">제도개요</a></li>
+                            <li><a href="./sub1/sub1_2.html">신청대상안내</a></li>
+                            <li><a href="#">입증자료안내</a></li>
+                            <li><a href="#">처리절차안내</a></li>
+                            <li><a href="#">후속조치안내</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">민원&middot;소식</a>
+                        <ul class="depth2">
+                            <li><a href="#">나의 변경신청</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">홍보자료</a></li>
+                            <li><a href="#">국민신문고</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">정책자료</a>
+                        <ul class="depth2">
+                            <li><a href="#">법령정보</a></li>
+                            <li><a href="#">관련서식</a></li>
+                            <li><a href="#">간행물</a></li>
+                            <li><a href="#">정책연구</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기관소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">위원장 인사말 / 역대위원장</a></li>
+                            <li><a href="#">위원 소개</a></li>
+                            <li><a href="#">기구 연혁</a></li>
+                            <li><a href="#">조직안내</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">정보공개</a>
+                        <ul class="depth2">
+                            <li><a href="#">정보공개안내</a></li>
+                            <li><a href="#">사전정보공개</a></li>
+                            <li><a href="https://www.open.go.kr/com/main/mainView.do" target="_blank" title="새창 열림">정보공개
+                                    청구</a></li>
+                            <li><a href="#">공공데이터 개방</a></li>
+                            <li><a href="#">비공개 대상정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">나의 변경신청 조회</a></li>
+                </ul>
+                <a href="#" class="closeAllGnb">전체메뉴 닫기</a>
+            </div>
+        </div>
+        <!-- header end -->
+
+        <div id="container">
+            <div class="contentTop">
+                <div class="inner">
+                    <h2 class="type1"><span>제도안내</span></h2>
+                    <div class="location">
+                        <a href="#" class="home">메인으로가기</a>
+                        <ul class="depth1">
+                            <li>
+                                <a href="#">제도 안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#">제도안내</a></li>
+                                    <li><a href="#">열린마당</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                    <li><a href="#">위원회 소개</a></li>
+                                    <li><a href="#">정보 공개</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">후속조치안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#">제도안내</a></li>
+                                    <li><a href="#">신청대상자</a></li>
+                                    <li><a href="#">입증자료</a></li>
+                                    <li><a href="#">변경절차</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="print">인쇄하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h3>후속조치안내</h3>
+                    <div class="subContent">
+                        <div class="section">
+                            <h4>신분증 재발급</h4>
+                            <div class="h4Content">
+                                <div class="tableBox measureTable type1">
+                                    <table class="info">
+                                        <caption>주민등록증, 운전면허증, 여권의 주요내용이 기입되어있습니다</caption>
+                                        <colgroup>
+                                            <col style="width:25%">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">주요내용</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title">주민등록증</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1">
+                                                        <li><span class="listTitle">접수기관</span>주민등록지 동주민센터</li>
+                                                        <li><span class="listTitle">구비서류</span>구 주민등록증, 결정통지서, 사진 1매</li>
+                                                        <li><span class="listTitle">소요기간</span>3주</li>
+                                                        <li><span class="listTitle">처리비용</span>없음</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">운전면허증</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1">
+                                                        <li><span class="listTitle">접수기관</span>전국 경찰서 또는 운전면허시험장</li>
+                                                        <li><span class="listTitle">구비서류</span>신 주민등록증, 구 운전면허증, 사진 1매</li>
+                                                        <li><span class="listTitle">소요기간</span>15일 <span class="smallFont color_gray">* 운전면허시험장에서는 즉시 발급</span></li>
+                                                        <li><span class="listTitle">처리비용</span>7,500원</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">여권</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1">
+                                                        <li><span class="listTitle">접수기관</span>시&middot;군&middot;구 및 광역시&middot;도청(여권업무대행기관)</li>
+                                                        <li><span class="listTitle">구비서류</span>신 주민등록증, 구 여권, 여권용 사진 1매</li>
+                                                        <li><span class="listTitle">소요기간</span>4-5일</li>
+                                                        <li><span class="listTitle">처리비용</span>20,000원~53,000원 <span class="smallFont color_gray">* 기존여권 찬여기간 재발급 가능</span></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <h4>금융 휴대전화 <br>변경신고</h4>
+                            <div class="h4Content">
+                                <div class="tableBox measureTable type2">
+                                    <table class="info">
+                                        <caption>은행,보험,신용카드와 유선,휴대전화,인터넷의 주요내용이 기입되어있습니다</caption>
+                                        <colgroup>
+                                            <col style="width:25%">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">주요내용</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title">은행&middot;보험&middot;신용카드</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1">
+                                                        <li><span class="listTitle">접수기관</span>각 기관별 내방 또는 유선 <span class="smallFont color_gray">* 해당기관별 문의 필요</span></li>
+                                                        <li><span class="listTitle">구비서류</span>신 주민등록증, 주민등록초본</li>
+                                                        <li><span class="listTitle">소요기간</span>즉시</li>
+                                                        <li><span class="listTitle">처리비용</span>없음</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">유선&middot;휴대전화&middot;인터넷</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1">
+                                                        <li><span class="listTitle">접수기관</span>대리점(직영점) 내방 또는 유선 <span class="smallFont color_gray">* 해당기관별 문의 필요</span></li>
+                                                        <li><span class="listTitle">구비서류</span>신 주민등록증, 주민등록초본</li>
+                                                        <li><span class="listTitle">소요기간</span>1일내</li>
+                                                        <li><span class="listTitle">처리비용</span>없음</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h4>건강보험 &middot; 국민연금</h4>
+                            <div class="h4Content">
+                                <div class="tableBox measureTable type3">
+                                    <table class="info">
+                                        <caption>건강보험, 국민연금의 주요내용이 기입되어있습니다</caption>
+                                        <colgroup>
+                                            <col style="width:25%">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">주요내용</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title">건강보험</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1 titleNone">
+                                                        <li>1~2주내 자동변경(문의: 건강보험공단 1577-1000) <br>
+                                                            <span class="smallFont color_gray">* 병원에서 자체 프로그램 사용 시 자동 변경되지 않으니, 병원 관계자에게 건강보험공단 프로그램 확인 후 변경 조치 요청</span></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">국민연금</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1 titleNone">
+                                                        <li>1~2주내 자동변경(문의: 국민연금공단 1335)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h4>등기 및 사업자등록</h4>
+                            <div class="h4Content">
+                                <div class="tableBox measureTable type4">
+                                    <table class="info">
+                                        <caption>부동산등기, 법인등기의 주요내용이 기입되어있습니다</caption>
+                                        <colgroup>
+                                            <col style="width:25%">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">주요내용</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title">부동산등기</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1">
+                                                        <li><span class="listTitle">접수기관</span>부동산 소재지 관할등기소</li>
+                                                        <li><span class="listTitle">구비서류</span>등기명의인표시변경신청서, 기본증명서, 주민등록초본, 등록면허세영수필확인서, 등기수수료납부영수증, 신분증, 도장</li>
+                                                        <li><span class="listTitle">소요기간</span>1주일 이상</li>
+                                                        <li><span class="listTitle">처리비용</span>3,000원 (등기의 목적별 부동산등기신청수수료액표에 정한 금액)</li>
+                                                    </ul>
+                                                    <p class="smallFont color_gray">* 부동산 등기명의인 정보변경시 토지대장, 건축물대장은 자동 연계 처리됨 </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">법인등기</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1">
+                                                        <li><span class="listTitle">접수기관</span>법인(본점) 소재지 관할등기소</li>
+                                                        <li><span class="listTitle">구비서류</span>등기명의인표시변경신청서, 기본증명서, 주민등록초본, 등록면허세영수필확인서, 등기수수료납부영수증, 대표자 신분증, 법인인감도장</li>
+                                                        <li><span class="listTitle">소요기간</span>1주일 이상</li>
+                                                        <li><span class="listTitle">처리비용</span>6,000원</li>
+                                                    </ul>
+                                                    <p class="smallFont color_gray">* 상기내용은 주식회사를 기준 작성되었으며, <br>자세한 사항은 인터넷 www.easylaw.go.kr( 찾기쉬운법령정보 > 주제별 생활법령 “사업”)을 참고하시거나, <br>등기민원콜센터(1544-0773) 사전 상담 후 방문 필요</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h4>각종 자격(면허)</h4>
+                            <div class="h4Content">
+                                <div class="tableBox measureTable type5">
+                                    <table class="info">
+                                        <caption>자격(면허)증, 자동차 등록증의 주요내용이 기입되어있습니다</caption>
+                                        <colgroup>
+                                            <col style="width:25%">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">주요내용</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title">자격(면허)증</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1 titleNone">
+                                                        <li>보유 자격(면허)증에 기재된 발급(시행) 기관별 확인&middot;문의</li>
+                                                    </ul>
+                                                    <p class="smallFont color_gray">* 자격(면허)증에 생년월일만 기재된 경우 재발급은 불필요하나, 추후 시험응시 등에 필요할 수 있으므로 변경신고 필요</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">자동차 등록증</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1">
+                                                        <li><span class="listTitle">접수기관</span>전국 시&middot;군&middot;구청 또는 정부24</li>
+                                                        <li><span class="listTitle">구비서류</span>신분증, 구 자동차등록증</li>
+                                                        <li><span class="listTitle">소요기간</span>즉시</li>
+                                                        <li><span class="listTitle">처리비용</span>700원</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h4>기타</h4>
+                            <div class="h4Content">
+                                <div class="tableBox measureTable type6">
+                                    <table class="info">
+                                        <caption>기타의 주요내용이 기입되어있습니다</caption>
+                                        <colgroup>
+                                            <col style="width:25%">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">주요내용</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title">학교(학적부 등)</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1 titleNone">
+                                                        <li>재학중인 학교에 확인&middot;문의 <span class="smallFont color_gray">* 졸업자의 경우, 출신학교별 문의</span></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">회사</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType1 titleNone">
+                                                        <li>재학중인 기관에 확인&middot;문의</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bannerSlider start -->
+        <div class="bannerSlider">
+            <div class="inner">
+                <h3>관련사이트</h3>
+                <div class="slick-container">
+                    <div class="slick-arrow">
+                        <button type="button" class="slick-button-prev">이전</button>
+                        <button type="button" class="slick-button-next">다음</button>
+                    </div>
+                    <div class="slick-auto">
+                        <button type="button" class="slick-button-start">재생</button>
+                        <button type="button" class="slick-button-stop">멈춤</button>
+                    </div>
+                    <ul class="slick-wrapper">
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner1.png" alt="경찰청 사이버수사국"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner2.png" alt="KISA 인터넷 보호나라&KrCERT"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner3.png" alt="프라이버시 클린서비스"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner4.png" alt="금융감독원"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner5.gif" alt="여성가족부"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner6.gif" alt="민원24"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner7.gif" alt="개인정보보호 종합포털"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner8.gif" alt="행정안전부"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner9.gif" alt="안전 Dream"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner10.gif" alt="파인"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner11.jpg" alt="대법원"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner12.gif" alt="정부24"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- bannerSlider end -->
+        <!-- footer start -->
+        <div id="footer">
+            <div class="inner">
+                <span class="footerLogo"><img src="../images/common/img_footer_logo.png" alt="행정안전부 주민등록변경위원회"></span>
+                <ul class="footerQuick">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">뷰어다운로드</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <p class="footerTxt">
+                    <span>세종시 가름로 143, 세종타워B 오피스2, 904호</span>
+                    <span>TEL 044.205.6632~6639</span>
+                    <span>FAX 044.204.8992</span>
+                </p>
+                <p class="copyright">COPYRIGHTⓒ  주민등록번호 변경위원회. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>

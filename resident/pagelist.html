@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>주민등록변경위원회 페이지목록</title>
+	<script type="text/javascript" charset="utf-8" src="./js/jquery.min.js"></script>
+	<style type="text/css">
+	/* KUI */
+	/* Reset */* {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}html,body {width:100%;height:100%;}html {overflow:hidden;overflow-y:auto;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,input,button {font-family:NanumGothic;}body {font-size:0.75em;color:#444;margin:0;padding:0;*word-break:break-all;-ms-word-break:break-all;}img,fieldset,iframe {border:0 none;}input,select,button{vertical-align:middle;}img {vertical-align:middle;}button {cursor:pointer;}a {text-decoration:none;} a:hover {text-decoration:none}table {border-collapse:collapse;border-spacing:0}body:after, #header:before, #header:after, #footer:before, #footer:after, .container:before, .container:after, .row:before, .row:after {display:table;content:" ";}#header, #footer, .container {clear:both;}/* table */table {width:100%;border-collapse:collapse;}table.list th, table.list td {padding:8px;}table.list th {color:#000;border-bottom:2px #bbb solid;}table.list td {color:#666;border-bottom:1px #bbb solid;}table.bordered {border-top:1px #ddd solid;border-right:1px #ddd solid;}table.bordered th, table.bordered td {border-left:1px #ddd solid;}table.boxed {border-top:1px #ddd solid;}table.boxed thead {border-right:1px #ddd solid;}table.boxed th {background:#f3f3f3;border-left:1px #ddd solid;}table.basic {border-top:1px #ddd solid;}table.basic th, table.basic td {padding:5px;border-bottom:1px #ddd solid;}table.basic th {color:#000;}table.basic td {color:#666;}table td.center {text-align:center;}table.th-effect th {background:#f3f3f3;}/* */.wrap {margin:15px;}table tbody tr td:last-child {color:blue;}.red{color:red !important;}.infoBox{padding:10px;height:100px;overflow-y:auto;background:#f3f3f3;font-size:14px;}.infoBox h2, h3{font-size:15px;}
+	.blue{color:blue;}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$("td").each(function(){
+			if($(this).text().indexOf('.asp')>0 || $(this).text().indexOf('.php')>0 || $(this).text().indexOf('.jsp')>0 || $(this).text().indexOf('.html')>0 || $(this).text().indexOf('.htm')>0){
+				$(this).css({'cursor':'pointer','text-decoration':'underline'});
+				$(this).click(function(){
+					window.open('./'+$(this).text(),'','');
+				});
+			}
+		});
+		$("tr td:last-child").each(function(){
+			if($(this).text().indexOf('완료')>0){
+				$(this).css('color','#3366aa');
+			}
+		});
+		$("tbody tr td:first-child").each(function(){
+			$(this).text(($(this).parent().index()+1));
+		});
+	});
+	</script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<h1>주민등록변경위원회 파일리스트</h1>
+
+	<div class="infoBox">
+		<h2>○ 주의사항</h2>
+<pre>
+	[접근성] label for 값과 input id 값은 동일해야 함. 예) label for="inp1" 일때  input id="inp1"
+	
+	header, footer 영역 include 작업시 index.html에 있는 header, footer로 작업 요망
+</pre>
+	</div>
+<br>
+	<div class="infoBox">
+		<h2>○ 히스토리</h2>
+<pre>
+-2021.08.18 : 
+ 카드뉴스 퍼블리싱 추가, content.css파일에 /* 20210818 카드뉴스 추가 start */ 주석부분 추가 요망
+
+-2021.09.03
+ 개인정보처리방침 html파일 3개 추가
+
+-2021.10.01
+ search.html, css추가
+</pre>
+	</div>
+
+	<h3>공통</h3>
+	<table class="basic list th-effect">
+	<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+	<thead>
+	<tr>
+		<th>번호</th>
+		<th>파일명</th>
+		<th>메뉴Path</th>
+		<th>화면설명</th>
+		<th>완료일</th>
+		<th>진행현황</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="center">&nbsp;</td>
+		<td>index.html</td>
+		<td>메인</td>
+		<td></td>
+		<td class="center">2021.07.29</td>
+		<td class="center">완료</td>
+	</tr>
+	</tbody>
+	</table>
+
+	<h3>1. 제도안내</h3>
+	<table class="basic list th-effect">
+		<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>파일명</th>
+				<th>메뉴Path</th>
+				<th>화면설명</th>
+				<th>완료일</th>
+				<th>진행현황</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub1/sub1_1.html</td>
+				<td>제도안내 > 제도개요</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub1/sub1_2.html</td>
+				<td>제도안내 > 신청대상안내</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub1/sub1_3.html</td>
+				<td>제도안내 > 입증자료안내</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub1/sub1_4.html</td>
+				<td>제도안내 > 처리절차안내</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub1/sub1_5.html</td>
+				<td>제도안내 > 후속조치안내</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub1/sub1_6.html</td>
+				<td>제도안내 > 자주하는 질문</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>2. 민원&middot;소식</h3>
+	<table class="basic list th-effect">
+		<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>파일명</th>
+				<th>메뉴Path</th>
+				<th>화면설명</th>
+				<th>완료일</th>
+				<th>진행현황</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub2/sub2_1.html</td>
+				<td>민원&middot;소식 > 나의 변경신청</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub2/sub2_2_list.html</td>
+				<td>민원&middot;소식 > 공지사항_list</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub2/sub2_2_view.html</td>
+				<td>민원&middot;소식 > 공지사항_view</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub2/sub2_3.html</td>
+				<td>민원&middot;소식 > 국민신문고</td>
+				<td></td>
+				<td class="center">2021.07.29</td>
+				<td class="center">완료</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>3. 정책자료</h3>
+	<table class="basic list th-effect">
+		<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>파일명</th>
+				<th>메뉴Path</th>
+				<th>화면설명</th>
+				<th>완료일</th>
+				<th>진행현황</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub3/sub3_1.html</td>
+				<td>정책자료 > 정책연구</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>4. 기관소개</h3>
+	<table class="basic list th-effect">
+		<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>파일명</th>
+				<th>메뉴Path</th>
+				<th>화면설명</th>
+				<th>완료일</th>
+				<th>진행현황</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub4/sub4_1.html</td>
+				<td>기관소개 > 위원장 인사말 / 역대위원장</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub4/sub4_2.html</td>
+				<td>기관소개 > 위원소개</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub4/sub4_3.html</td>
+				<td>기관소개 > 기관연혁</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub4/sub4_4.html</td>
+				<td>기관소개 > 조직안내</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr> 
+				<td class="center">&nbsp;</td>
+				<td>sub4/sub4_5.html</td>
+				<td>기관소개 > 찾아오시는길</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>5. 정보공개</h3>
+	<table class="basic list th-effect">
+		<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>파일명</th>
+				<th>메뉴Path</th>
+				<th>화면설명</th>
+				<th>완료일</th>
+				<th>진행현황</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub5/sub5_1_1.html</td>
+				<td>정보공개 > 정보공개안내 > 정보공개제도</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub5/sub5_1_2.html</td>
+				<td>정보공개 > 정보공개안내 > 정보공개제도 주요내용</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub5/sub5_1_3.html</td>
+				<td>정보공개 > 정보공개안내 > 정보공개 청구절차</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub5/sub5_1_4.html</td>
+				<td>정보공개 > 정보공개안내 > 불복구제절차 및 방법</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub5/sub5_2.html</td>
+				<td>정보공개 > 정보공개 청구</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub5/sub5_3.html</td>
+				<td>정보공개 > 공공데이터 개방</td>
+				<td></td>
+				<td class="center">2021.07.30</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub5/sub5_4.html</td>
+				<td>정보공개 > 공공데이터</td>
+				<td></td>
+				<td class="center">2021.06.18</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub5/sub5_5.html</td>
+				<td>정보공개 > 카드뉴스</td>
+				<td></td>
+				<td class="center">2021.08.18</td>
+				<td class="center red">추가</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>6. 이용안내</h3>
+	<table class="basic list th-effect">
+		<colgroup><col style="width:50px"><col style="width:200px"><col><col style="width:300px"><col style="width:90px"><col style="width:80px"></colgroup>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>파일명</th>
+				<th>메뉴Path</th>
+				<th>화면설명</th>
+				<th>완료일</th>
+				<th>진행현황</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub6/sub6_1.html</td>
+				<td>이용안내 > 이용안내</td>
+				<td></td>
+				<td class="center">2021.06.18</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub6/sub6_2.html</td>
+				<td>이용안내 > 뷰어다운로드</td>
+				<td></td>
+				<td class="center">2021.06.18</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub6/sub6_3.html</td>
+				<td>이용안내 > 저작권정책</td>
+				<td></td>
+				<td class="center">2021.06.18</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub6/sub6_4.html</td>
+				<td>이용안내 > 개인정보처리방침</td>
+				<td></td>
+				<td class="center">2021.06.18</td>
+				<td class="center">완료</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub6/sub6_4_1.html</td>
+				<td>이용안내 > 개인정보처리방침</td>
+				<td></td>
+				<td class="center">2021.09.03</td>
+				<td class="center red">추가</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub6/sub6_4_2.html</td>
+				<td>이용안내 > 개인정보처리방침</td>
+				<td></td>
+				<td class="center">2021.09.03</td>
+				<td class="center red">추가</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub6/sub6_4_3.html</td>
+				<td>이용안내 > 개인정보처리방침</td>
+				<td></td>
+				<td class="center">2021.09.03</td>
+				<td class="center red">추가</td>
+			</tr>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>sub6/sub6_5.html</td>
+				<td>이용안내 > 사이트맵</td>
+				<td></td>
+				<td class="center">2021.06.18</td>
+				<td class="center">완료</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>7. 통합검색</h3>
+	<table class="basic list th-effect">
+		<colgroup>
+			<col style="width:50px">
+			<col style="width:200px">
+			<col>
+			<col style="width:300px">
+			<col style="width:90px">
+			<col style="width:80px">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>파일명</th>
+				<th>메뉴Path</th>
+				<th>화면설명</th>
+				<th>완료일</th>
+				<th>진행현황</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="center">&nbsp;</td>
+				<td>search.html</td>
+				<td>통합검색</td>
+				<td></td>
+				<td class="center">2021.10.01</td>
+				<td class="center red">추가</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>페이지목록</title>
+	<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<style type="text/css">
+	/* KUI */
+	/* Reset */* {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}html,body {width:100%;height:100%;}html {overflow:hidden;overflow-y:auto;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,input,button {font-family:NanumGothic;}body {font-size:0.75em;color:#444;margin:0;padding:0;word-break:break-all;-ms-word-break:break-all;}img,fieldset,iframe {border:0 none;}input,select,button{vertical-align:middle;}img {vertical-align:middle;}button {cursor:pointer;}a {text-decoration:none;} a:hover {text-decoration:none}table {border-collapse:collapse;border-spacing:0}body:after, #header:before, #header:after, #footer:before, #footer:after, .container:before, .container:after, .row:before, .row:after {display:table;content:" ";}#header, #footer, .container {clear:both;}/* table */table {width:100%;border-collapse:collapse;}table.basic {border-top:1px #ddd solid;}table.basic th, table.basic td {padding:10px;border-bottom:1px #ddd solid;}table.basic th {color:#000;}table.basic td {color:#666;}table td.center {text-align:center;}table.th-effect th {background:#f3f3f3;}/* */.wrap {margin:15px;}.red{color:red;}.infoBox{margin-bottom:20px;padding:20px;height:100px;background:#f5f5f5;border:1px solid #ddd;overflow-y:auto;}.infoBox b{font-size:16px;}.infoBox ul{padding:0;}.infoBox ul li{padding:0;list-style:none;font-size:15px;}.red{ color:red !important; }
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$("td").each(function(){
+			if($(this).text().indexOf('.asp')>0 || $(this).text().indexOf('.php')>0 || $(this).text().indexOf('.jsp')>0 || $(this).text().indexOf('.jsp')>0 || $(this).text().indexOf('.htm')>0){
+				$(this).css({'cursor':'pointer','text-decoration':'underline'});
+				$(this).click(function(){
+					window.open('.'+$(this).prev().text()+''+$(this).text(),'','');
+				});
+			}
+		});
+		$("tr td:last-child").each(function(){
+			if($(this).text().indexOf('완료')>0){
+				$(this).css('color','#02b742');
+			}
+		});
+		$("tbody tr td:first-child").each(function(){
+			$(this).text(($(this).parent().index()+1));
+		});
+	});
+	</script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrap">
+		<h1>우주전파센터 예경보시스템 파일리스트</h1>
+
+		<div class="infoBox">
+			<b>2021.09.10</b>
+			<ul>
+				<li>1차 : 5페이지 우선 작업</li>
+				<li>2차 : 6-2(요약 및 전망), 7-1, 7-2, 8-2제외 작업완료</li>
+				<li>2021/09/28 : 5-2, 6-2(요약 및 전망)추가 작업, 6-1, 7-1, 7-2, 8-2 디자인 받은 후 퍼블리싱 예정</li>
+				<li>2021/09/29 : 5-2, 6-2 수정사항 작업 - 버튼on/off, 버튼 -> input변경, 이미지편집에디터 수정 </li>
+				<li>2021/10/01 : 2차 퍼블리싱 완료. ( 6-1, 7-1, 8-2 퍼블리싱 ), left메뉴 css 수정 </li>
+			</ul>
+		</div>
+
+	 	<h3>1. 태양흑점폭발</h3>
+		<table class="basic list th-effect">
+			<colgroup><col width="50"><col width="80"><col width="200"><col width=""><col width=""><col width="90"><col width="80"></colgroup>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>경로</th>
+					<th>파일명</th>
+					<th>메뉴Path</th>
+					<th>화면설명</th>
+					<th>완료일</th>
+					<th>진행현황</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub1/UI-FW-201-M.html</td>
+					<td>GOES X-ray</td>
+					<td>데이터구간 색상코드변 경레이어 팝업</td>
+					<td>2021.09.10</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub1/UI-FW-102-M.html</td>
+					<td>태양전파관측</td>
+					<td></td>
+					<td>2021.09.10</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub1/UI-FW-105-M.html</td>
+					<td>SDO</td>
+					<td>SDO에 대한 스토리지 검색 및 영상 표출</td>
+					<td>2021.09.16</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub1/UI-FW-106-M.html</td>
+					<td>GOES SUVI</td>
+					<td>GOES SUVI에 대한 스토리지 검색 및 영상 표출</td>
+					<td>2021.09.16</td>
+					<td>완료</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>4. 전리권교란</h3>
+		<table class="basic list th-effect">
+			<colgroup><col width="50"><col width="80"><col width="200"><col width=""><col width=""><col width="90"><col width="80"></colgroup>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>경로</th>
+					<th>파일명</th>
+					<th>메뉴Path</th>
+					<th>화면설명</th>
+					<th>완료일</th>
+					<th>진행현황</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub4/UI-FW-402-M.html</td>
+					<td>전리권교란 > 전리권관측</td>
+					<td>foF2에 대한 스토리지 검색 및 이미지 표출</td>
+					<td>2021.09.16</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub4/UI-FW-402-M.html</td>
+					<td>전리권교란 > 한국형 전리권 관측모델</td>
+					<td>TEC에 대한 스토리지 검색 및 이미지 표출</td>
+					<td>2021.09.16</td>
+					<td>완료</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>5. 데이터 표출 및 조회</h3>
+		<table class="basic list th-effect">
+			<colgroup>
+				<col width="50">
+				<col width="80">
+				<col width="200">
+				<col width="">
+				<col width="">
+				<col width="90">
+				<col width="80">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>경로</th>
+					<th>파일명</th>
+					<th>메뉴Path</th>
+					<th>화면설명</th>
+					<th>완료일</th>
+					<th>진행현황</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub5/UI-FW-502-M.html</td>
+					<td>데이터 표출 및 조회 > 자료통합비교</td>
+					<td>이미지 수정 기능( 자르기, 오른쪽 화면에 canvas로 노출 )<br>
+					스크립트 내부작성</td>
+					<td>2021.09.27</td>
+					<td>완료</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>6. 예보서비스</h3>
+		<table class="basic list th-effect">
+			<colgroup><col width="50"><col width="80"><col width="200"><col width=""><col width=""><col width="90"><col width="80"></colgroup>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>경로</th>
+					<th>파일명</th>
+					<th>메뉴Path</th>
+					<th>화면설명</th>
+					<th>완료일</th>
+					<th>진행현황</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-602-M.html</td>
+					<td>예보서비스 > 1일예보</td>
+					<td>1일예보 상세</td>
+					<td>2021.10.01</td>
+					<td class="red">추가</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-611-M.html</td>
+					<td>예보서비스 > 3일예보</td>
+					<td>3일 예보 조회</td>
+					<td>2021.09.16</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-612-M_SRS.html</td>
+					<td>예보서비스 > 3일예보 > 예보학률 > SRS, MATLAB</td>
+					<td>SRS 정보 조회, MATLAB탭과 디자인 동일</td>
+					<td>2021.09.17</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-612-M_ASSA.html</td>
+					<td>예보서비스 > 3일예보 > 예보학률 > ASSA</td>
+					<td>ASSA 정보 조회</td>
+					<td>2021.09.17</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-612-M_예보관.html</td>
+					<td>예보서비스 > 3일예보 > 예보학률 > 예보관, 분석관</td>
+					<td>예보관 정보 조회, 분석관탭과 디자인 동일</td>
+					<td>2021.09.17</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-613-M.html</td>
+					<td>예보서비스 > 3일예보 > 요약 및 전망</td>
+					<td>이미지 편집기능<br>
+						 head 영역에 &#60;link rel="stylesheet" type="text/css" href="../../css/toast_ui.css"&#62;, &#60;script src="../../js/toast_ui.js"&#62;&#60;/script&#62;추가, 스크립트 내부에 작성
+					</td>
+					<td>2021.09.28</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-615-M.html</td>
+					<td>예보서비스 > 3일예보 > 분야별 영향 분석</td>
+					<td></td>
+					<td>2021.09.23</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-616-M.html</td>
+					<td>예보서비스 > 3일예보 > 지난 3일간 경보내역</td>
+					<td></td>
+					<td>2021.09.23</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-617-M.html</td>
+					<td>예보서비스 > 3일예보 > 흑점분석</td>
+					<td></td>
+					<td>2021.09.23</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-618-M.html</td>
+					<td>예보서비스 > 3일예보 > CME 관측내역</td>
+					<td></td>
+					<td>2021.09.23</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-620-M.html</td>
+					<td>예보서비스 > 3일예보 > 참고자료</td>
+					<td></td>
+					<td>2021.09.23</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-631-M.html</td>
+					<td>27일예보</td>
+					<td></td>
+					<td>2021.09.10</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-632-M.html</td>
+					<td>27일예보 > 27일 예보 상세 > 27일 예보 예측</td>
+					<td></td>
+					<td>2021.09.10</td>
+					<td>완료</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub6/UI-FW-633-M.html</td>
+					<td>27일예보 > 27일 예보 상세 > 27일 예보 관측</td>
+					<td></td>
+					<td>2021.09.10</td>
+					<td>완료</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>7. 경보서비스</h3>
+		<table class="basic list th-effect">
+			<colgroup>
+				<col width="50">
+				<col width="80">
+				<col width="200">
+				<col width="">
+				<col width="">
+				<col width="90">
+				<col width="80">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>경로</th>
+					<th>파일명</th>
+					<th>메뉴Path</th>
+					<th>화면설명</th>
+					<th>완료일</th>
+					<th>진행현황</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub7/UI-FW-701-M.html</td>
+					<td>경보서비스 > SMS전송</td>
+					<td>Email전송페이지도 동일</td>
+					<td>2021.10.01</td>
+					<td class="red">추가</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>8. 시스템관리</h3>
+		<table class="basic list th-effect">
+			<colgroup>
+				<col width="50">
+				<col width="80">
+				<col width="200">
+				<col width="">
+				<col width="">
+				<col width="90">
+				<col width="80">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>경로</th>
+					<th>파일명</th>
+					<th>메뉴Path</th>
+					<th>화면설명</th>
+					<th>완료일</th>
+					<th>진행현황</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&nbsp;</td>
+					<td>/</td>
+					<td>sub8/UI-FW-812-M.html</td>
+					<td>시스템관리 > 수요자관리 > 상세화면</td>
+					<td></td>
+					<td>2021.10.01</td>
+					<td class="red">추가</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+</body>
+</html>

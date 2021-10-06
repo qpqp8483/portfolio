@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>주민등록번호변경위원회</title>
+    <link rel="stylesheet" type="text/css" href="../css/font.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.plugin.js"></script>
+    <script src="../js/inje_common.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/content.js"></script>
+</head>
+
+<body>
+    <dl id="skipNav">
+        <dd><a href="#gnb">메뉴 바로가기</a></dd>
+        <dd><a href="#container">본문 바로가기</a></dd>
+    </dl>
+    <div id="wrap">
+        <!-- header start -->
+        <div id="header">
+            <div class="inner">
+                <h1><a href="/index.html"><img src="../images/common/img_logo.png" alt="행정안전부 주민등록변경위원회"></a></h1>
+                <!-- gnb start -->
+                <div id="gnb">
+                    <ul class="depth1">
+                        <li>
+                            <a href="./sub1/sub1_1.html">제도안내</a>
+                            <ul class="depth2">
+                                <li><a href="./sub1/sub1_1.html">제도개요</a></li>
+                                <li><a href="./sub1/sub1_2.html">신청대상안내</a></li>
+                                <li><a href="#">입증자료안내</a></li>
+                                <li><a href="#">처리절차안내</a></li>
+                                <li><a href="#">후속조치안내</a></li>
+                                <li><a href="#">자주하는질문</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">민원&middot;소식</a>
+                            <ul class="depth2">
+                                <li><a href="#">나의 변경신청</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">홍보자료</a></li>
+                                <li><a href="#">국민신문고</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정책자료</a>
+                            <ul class="depth2">
+                                <li><a href="#">법령정보</a></li>
+                                <li><a href="#">관련서식</a></li>
+                                <li><a href="#">간행물</a></li>
+                                <li><a href="#">정책연구</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">기관소개</a>
+                            <ul class="depth2">
+                                <li><a href="#">위원장 인사말 / 역대위원장</a></li>
+                                <li><a href="#">위원 소개</a></li>
+                                <li><a href="#">기구 연혁</a></li>
+                                <li><a href="#">조직안내</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정보공개</a>
+                            <ul class="depth2">
+                                <li><a href="#">정보공개안내</a></li>
+                                <li><a href="#">사전정보공개</a></li>
+                                <li><a href="https://www.open.go.kr/com/main/mainView.do" target="_blank"
+                                        title="새창 열림">정보공개 청구</a></li>
+                                <li><a href="#">공공데이터 개방</a></li>
+                                <li><a href="#">비공개 대상정보</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- gnb end -->
+                <a href="#" class="myInquiry">나의 변경신청 조회</a>
+                <a href="#" class="allgnbOpen">전체메뉴 열기</a>
+                <div class="mainSearchBox">
+                    <form method="POST" action="" name="" class="form_bubble">
+                        <input type="text" name="" class="mainSearch" placeholder="관련서식검색" title="관련서식검색">
+                        <input type="submit" class="btn_topSearch" value="검색" title="검색버튼">
+                    </form>
+                    <a href="#" class="allSearch">통합검색</a>
+                </div>
+            </div>
+            <div class="allGnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="./sub1/sub1_1.html">제도안내</a>
+                        <ul class="depth2">
+                            <li><a href="./sub1/sub1_1.html">제도개요</a></li>
+                            <li><a href="./sub1/sub1_2.html">신청대상안내</a></li>
+                            <li><a href="#">입증자료안내</a></li>
+                            <li><a href="#">처리절차안내</a></li>
+                            <li><a href="#">후속조치안내</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">민원&middot;소식</a>
+                        <ul class="depth2">
+                            <li><a href="#">나의 변경신청</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">홍보자료</a></li>
+                            <li><a href="#">국민신문고</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">정책자료</a>
+                        <ul class="depth2">
+                            <li><a href="#">법령정보</a></li>
+                            <li><a href="#">관련서식</a></li>
+                            <li><a href="#">간행물</a></li>
+                            <li><a href="#">정책연구</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기관소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">위원장 인사말 / 역대위원장</a></li>
+                            <li><a href="#">위원 소개</a></li>
+                            <li><a href="#">기구 연혁</a></li>
+                            <li><a href="#">조직안내</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">정보공개</a>
+                        <ul class="depth2">
+                            <li><a href="#">정보공개안내</a></li>
+                            <li><a href="#">사전정보공개</a></li>
+                            <li><a href="https://www.open.go.kr/com/main/mainView.do" target="_blank" title="새창 열림">정보공개
+                                    청구</a></li>
+                            <li><a href="#">공공데이터 개방</a></li>
+                            <li><a href="#">비공개 대상정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">나의 변경신청 조회</a></li>
+                </ul>
+                <a href="#" class="closeAllGnb">전체메뉴 닫기</a>
+            </div>
+        </div>
+        <!-- header end -->
+
+        <div id="container">
+            <div class="contentTop">
+                <div class="inner">
+                    <h2 class="type1"><span>제도안내</span></h2>
+                    <div class="location">
+                        <a href="#" class="home">메인으로가기</a>
+                        <ul class="depth1">
+                            <li>
+                                <a href="#">제도 안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#">제도안내</a></li>
+                                    <li><a href="#">열린마당</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                    <li><a href="#">위원회 소개</a></li>
+                                    <li><a href="#">정보 공개</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">입증자료안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#">제도안내</a></li>
+                                    <li><a href="#">신청대상자</a></li>
+                                    <li><a href="#">입증자료</a></li>
+                                    <li><a href="#">변경절차</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="print">인쇄하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h3>입증자료안내</h3>
+                    <div class="subContent">
+                        <div class="section">
+                            <h4>주민등록번호 유출 입증자료</h4>
+                            <div class="h4Content">
+                                <ul class="listType1 mgb15">
+                                    <li>개인정보처리자, 신용정보회사, 정보통신서비스 제공자 등이 정보 주체에게 제공한 서면, 전자우편, 휴대전화 문자메시지, 인터넷
+                                        홈페이지&middot;신문&middot;방송&middot;사업장 등에 게제&middot;게시판 자료 등</li>
+                                    <li>그밖에 주민등록번호가 유출되었음을 입증할 수 있는 자료</li>
+                                </ul>
+                                <div class="confirm_rule">
+                                    <b class="title">주민등록법 시행령 제12조의3제2항</b>
+                                    <ul>
+                                        <li>「개인정보 보호법」 제34조제1항, 제39조의4제1항 및 같은 법 시행령 제40조, 제48조의4에 따라 개인정보처리자가 정보주체에게
+                                            주민등록번호가 유출되었음을 알린 경우 그 통지서(전자우편 또는 휴대전화 문자메시지로 통지된 경우를 포함한다. 이하 이항에서 같다)
+                                        <li>「신용정보의 이용 및 보호에 관한 법률」 제39조의4제1항 및 같은 법 시행령 제34조의4에 따라 신용정보회사등이 개인인 신용정보주체에게
+                                            주민등록번호가 누설되었음을 통지한 경우 그 통지서</li>
+                                        <li>변경신청인이 인터넷, 신문&middot;방송, 게시판, 그 밖의 매체를 통하여 변경신청인의 주민등록번호가 유출된 사실을 알게 된 경우
+                                            해당 인터넷등에 게재&middot;게시되어 있는 자료</li>
+                                        <li>그 밖에 변경신청인의 주민등록번호가 유출된 사실을 입증할 수 있는 자료</li>
+                                    </ul>
+                                </div>
+                                <div class="confirm_box">
+                                    <b class="title">예시</b>
+                                    <ul class="listType2">
+                                        <li>주민등록번호가 유출된 내용이 기재된 수사기록, 판결문</li>
+                                        <li>주민등록번호가 유출된 내용이 기재된 국가&middot;지방행정기관, 한국인터넷진흥원 등의 민원조사 또는 개인정보 침해신고 처리 확인서 등
+                                        </li>
+                                        <li>통신사 등 명의도용조사 처리결과서, 국민건강보험공단 개인정보 정정에 대한 결과통지서 등</li>
+                                        <li>주민등록번호가 유출된 내용을 확인할 수 있는 휴대전화 메시지, 이메일 내용 등</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <h4>변경요건별 <br>입증자료(예시)</h4>
+                            <div class="h4Content">
+                                <b class="content_title">생명·신체 위해 또는 위해 우려 입증자료</b>
+                                <div class="tableBox mgt10 mgb50">
+                                    <table class="info">
+                                        <caption>생명·신체 위해 또는 위해 우려의 입증자료, 발급기관의 내용이 기입되어있습니다.</caption>
+                                        <colgroup>
+                                            <col style="width:10%">
+                                            <col style="width:10%">
+                                            <col>
+                                            <col style="width:20%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row" colspan="2">구분</th>
+                                                <th scope="row">입증자료</th>
+                                                <th scope="row">발급기관</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="4">생명 <br>&middot; <br>신체</td>
+                                                <td rowspan="3">위해</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>상해진단서, 의무&middot;진료기록, 치료비명세서, 신체감정서 등</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">진료병원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>사건사고접수(또는 사실)확인원, 고소장 사본, 공소장, 사건기록 사본, 사건처분결과통지서 등 기타 공신력
+                                                            있는 자료</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당 수사기관 <br>(검찰, 경찰)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>판결문, 공판기록, 자기조서 등</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">법원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>위해 우려</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>생명&middot;신체 위해 또는 위해 우려의 개연성을 소명하는 녹취록과 진술서, 수사기록 등을 통해 확인
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당 수사기관 <br>(검찰, 경찰) 등</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <b class="content_title">재산에 대한 피해 또는 피해 우려 입증자료</b>
+                                <div class="tableBox mgt10 mgb50">
+                                    <table class="info">
+                                        <caption>재산에 대한 피해 또는 피해 우려의 입증자료, 발급기관의 내용이 기입되어있습니다.</caption>
+                                        <colgroup>
+                                            <col style="width:10%">
+                                            <col style="width:10%">
+                                            <col>
+                                            <col style="width:20%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row" colspan="2">구분</th>
+                                                <th scope="row">입증자료</th>
+                                                <th scope="row">발급기관</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="4">재산</td>
+                                                <td rowspan="3">피해</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>(동산) 계좌이체확인서, 대출확인서 등</li>
+                                                        <li>(부동산) 임대차계약서, 등기부등본 등</li>
+                                                        <li>(채권) 금전소비대차계약서, 차용증, 은행여신거래약관 등</li>
+                                                        <li>(유가증권) 주식거래내역, 각종 증권 사본 등</li>
+                                                        <li>(무체재산권) 특허등록원부, 출원사실증명서 등</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">
+                                                    금융기관 <br>
+                                                    부동산중개소 <br>
+                                                    법원 <br>
+                                                    특허청
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>사건사고접수(또는 사실)확인원, 고소장 사본, 고소(고발)장접수 증명, 공소장, 사건기록 사본, 사건처분
+                                                            결과통지서 등</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당 수사기관 <br>(검찰, 경찰)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>판결문, 공판기록</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">법원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>피해우려</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>반복적인 불법대출사기 및 부동산매매사기, 녹취록, 진술서 등 피해의 개연성을 소명하는 자료</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <b class="content_title">성폭력·성매매·가정폭력 피해 또는 피해 우려 입증자료</b>
+                                <div class="tableBox mgt10 mgb50">
+                                    <table class="info">
+                                        <caption>성폭력피해자,성매매피해자,가정폭력피해자의 입증자료, 발급기관의 내용이 기입되어있습니다.</caption>
+                                        <colgroup>
+                                            <col style="width:20%">
+                                            <col>
+                                            <col style="width:20%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">입증자료</th>
+                                                <th scope="row">발급기관</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="4">성폭력피해자 <br>(아동․청소년 포함)</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>성폭력 피해 상담사실 확인서, 보호시설 입소확인서</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">
+                                                    성폭력피해상담소 <br>
+                                                    성폭력 피해자보호시설 <br>
+                                                    해바라기 센터
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>진단서, 진료기록</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">진료병원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>수사기관 사건(고소․고발 등) 접수증, 고소장 사본</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당 수사기관 <br>(검찰, 경찰)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>판결문, 공판기록</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">법원</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="4">성매매피해자</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>보호시설 입소확인서</li>
+                                                        <li>상담확인서</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">
+                                                    성매매피해자 지원시설 <br>
+                                                    성매매피해자 상담소
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>진단서, 진료기록</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">진료병원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>수사기관 사건(고소․고발 등) 접수증, 고소장 사본</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당 수사기관 <br>(검찰, 경찰)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>판결문, 공판기록</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">법원</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="4">가정폭력 피해자</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>가정폭력 피해 상담사실 확인서, 보호시설 입소확인서</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">
+                                                    가정폭력상담소 <br>
+                                                    가정폭력피해자 보호시설
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>진단서, 진료기록</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">진료병원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>수사기관 사건(고소․고발 등) 접수증, 고소장 사본</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당 수사기관 <br>(검찰, 경찰)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>판결문, 공판기록</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">법원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <b class="content_title">특정범죄 신고자, 특정강력범죄·방화범죄·명예훼손범죄 피해자, 아동학대 피해아동, 학교폭력 피해학생, 공익신고자 등의 피해 입증자료</b>
+                                <div class="tableBox mgt10">
+                                    <table class="info">
+                                        <caption>범죄신고자, 범죄행위 피해자, 아동학대 피해아동, 학교폭력 피해아동, 공익신고자의 입증자료, 발급기관의 내용이 기입되어있습니다.
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width:20%">
+                                            <col>
+                                            <col style="width:20%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">입증자료</th>
+                                                <th scope="row">발급기관</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>범죄신고자등</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>사건사고접수확인원</li>
+                                                        <li>범죄신고자 등 신변안전조치신청서 및 통보서 등</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당 수사기관 <br>(검찰, 경찰)</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">범죄행위 피해자</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>사건사고사실확인원</li>
+                                                        <li>공소장, 사건처분결과통지서 등</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당 수사기관 <br>(검찰, 경찰)</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>판결문</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">법원</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">아동학대 피해아동</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>아동학대사건발생확인서</li>
+                                                        <li>수사기록</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">경찰서</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>판결문</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">법원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>학교폭력 피해학생</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>학교폭력대책자치위원회 결과 통지서</li>
+                                                        <li>학교생활기록부</li>
+                                                        <li>학교폭력사고발생확인서</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">
+                                                    해당 학교 <br>
+                                                    경찰서
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">공익신고자</td>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>공익신고접수증</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">해당기관</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="alignLeft">
+                                                    <ul class="listType2">
+                                                        <li>신변보호조치 요구서 및 결과 통지</li>
+                                                        <li>신분공개경위 확인요구서 및 결과 통지</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="alignLeft">국민권익위원회</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bannerSlider start -->
+        <div class="bannerSlider">
+            <div class="inner">
+                <h3>관련사이트</h3>
+                <div class="slick-container">
+                    <div class="slick-arrow">
+                        <button type="button" class="slick-button-prev">이전</button>
+                        <button type="button" class="slick-button-next">다음</button>
+                    </div>
+                    <div class="slick-auto">
+                        <button type="button" class="slick-button-start">재생</button>
+                        <button type="button" class="slick-button-stop">멈춤</button>
+                    </div>
+                    <ul class="slick-wrapper">
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner1.png"
+                                    alt="경찰청 사이버수사국"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner2.png"
+                                    alt="KISA 인터넷 보호나라&KrCERT"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner3.png"
+                                    alt="프라이버시 클린서비스"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner4.png" alt="금융감독원"></a>
+                        </li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner5.gif" alt="여성가족부"></a>
+                        </li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner6.gif" alt="민원24"></a>
+                        </li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner7.gif"
+                                    alt="개인정보보호 종합포털"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner8.gif" alt="행정안전부"></a>
+                        </li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner9.gif"
+                                    alt="안전 Dream"></a></li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner10.gif" alt="파인"></a>
+                        </li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner11.jpg" alt="대법원"></a>
+                        </li>
+                        <li class="slick-slide"><a href="#"><img src="../images/main/img_banner12.gif" alt="정부24"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- bannerSlider end -->
+        <!-- footer start -->
+        <div id="footer">
+            <div class="inner">
+                <span class="footerLogo"><img src="../images/common/img_footer_logo.png" alt="행정안전부 주민등록변경위원회"></span>
+                <ul class="footerQuick">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">뷰어다운로드</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <p class="footerTxt">
+                    <span>세종시 가름로 143, 세종타워B 오피스2, 904호</span>
+                    <span>TEL 044.205.6632~6639</span>
+                    <span>FAX 044.204.8992</span>
+                </p>
+                <p class="copyright">COPYRIGHTⓒ 주민등록번호 변경위원회. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <div id="overlay"></div>
+</body>
+
+</html>
